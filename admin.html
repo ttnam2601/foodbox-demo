@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <!-- Bootstrap CDN css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- END Bootstrap CDN css-->
+
+    <!--IMPORT HEADER AND FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <!-- END IMPORT HEADER AND FOOTER -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <section class="admin p-0">
+        <div class="container-fluid p-0 pe-3">
+
+            <div class="header-admin row">
+                <div class="col d-flex align-items-center gap-78">
+                    <a href="index.html" class="logo-brand text-decoration-none text-orange d-flex align-items-center">
+                        <img class="logo-image img-fluid" src="img/Group 315.png" alt="Foodbox">
+
+                        <span class="logo-text text-uppercase fs-28 fw-bold ms-md-0 ">Foodbox</span>
+                    </a>
+
+                    <div class="btn-nav">
+                        <img src="img/navbar.png" alt="">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-end align-items-center gap-65">
+                    <a class="position-relative" href="#">
+                        <span class="badge fs-13 p-0  rounded-circle lexend position-absolute" style="background:
+                        #DD4747;right:-3px;top:-2px;width: 15px;height: 15px;padding-top: 1px!important;">2</span>
+                        <img src="img/keng.png" alt="">
+                    </a>
+                    <a class="border-0 bg-white exit" href="index.html">
+                        <img src="img/exit.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="min-height:100vh;">
+                <div class="col-2  p-0">
+                    <div class="admin-info pt-4">
+                        <div class="avatar">
+                            <img class=" d-block mx-auto" src="img/em-yeu-chi.png" alt="xinh">
+                        </div>
+                        <h3 class="mt-3 mb-0 admin-name text-white fs-18 fw-500 lexend text-center">
+                            Nguyễn Linh Chi
+                        </h3>
+                        <p class="text-white fs-18 fw-500 text-center">Store Manager - Online</p>
+                    </div>
+
+                    <ul class="list-unstyled tabs-nav lexend fs-18 mb-0">
+                        <li><a class=" text-white d-block" href="#tab1">Thống kê</a></li>
+                        <li><a class="text-white d-block" href="#tab2">Đơn hàng</a></li>
+                        <li><a class="text-white d-block" href="#tab3">Sản phẩm</a></li>
+                        <li><a class="text-white d-block" href="#tab4">Tin tức</a></li>
+                        <li><a class="text-white d-block" href="#tab5">Data mới</a></li>
+                        <li><a class="text-white d-block" href="#tab6">Nhân viên</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="col-10">
+                    <div id="tabs-content">
+                        <div id="tab1" class="tab-content">
+                            <h2 class="lexend text-orange fs-24 fw-bold text-center mt-3 pt-1">Thống kê</h2>
+                            <div class="d-grid grid-column-4">
+                                <div class="grid-item">
+                                    <p class="text-uppercase fs-11 fw-500 jak text-secondary mb-0">Doanh thu hôm nay
+                                    </p>
+                                    <div class="d-flex align-items-center pt-2 justify-content-between">
+                                        <p class="jak fw-bold fs-21  text-black text-uppercase mb-0">7.283.000 VNĐ</p>
+                                        <p class="jak fs-13 fw-500 text-green-new mb-0 pb-2">+ 36%
+                                            <img class="pb-1" src="img/Icon.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <p class="text-uppercase fs-11 fw-500 jak text-secondary mb-0"> DOANH THU tháng
+                                    </p>
+                                    <div class="d-flex align-items-center pt-2 justify-content-between">
+                                        <p class="jak fw-bold fs-21  text-black text-uppercase mb-0">320.000.000 VNĐ</p>
+                                        <p class="jak fs-13 fw-500 mb-0 text-pink pb-2">+ 14%
+                                            <img class="pb-1" src="img/2.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <p class="text-uppercase fs-11 fw-500 jak text-secondary mb-0">TỔNG ĐƠN HÀNG
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between pt-2">
+                                        <p class="jak fw-bold fs-21  text-black text-uppercase mb-0">4,382</p>
+                                        <p class="jak fs-13 fw-500 mb-0 pb-2 text-green-new">+ 36%
+                                            <img class="pb-1" src="img/Icon.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <p class="text-uppercase fs-11 fw-500 jak text-secondary mb-0">KHÁCH HÀNG
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between pt-2">
+                                        <p class="jak fw-bold fs-21  text-black text-uppercase mb-0">2,9039</p>
+                                        <p class="jak fs-13 fw-500 mb-0 pb-2 text-green-new">+ 36%
+                                            <img class="pb-1" src="img/Icon.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#"
+                                class="search-content mx-auto d-flex justify-content-center align-items-center"
+                                method="get">
+                                <div>
+                                    <input class="border-0 lexend fw-300 text-black fs-15" type="text"
+                                        value="31/10/2022 00:00 - 06/11/2022 00:00">
+                                </div>
+                                <div>
+                                    <button type="submit "
+                                        class="btn-orange text-white rounded-0 lexend fs-18 d-block border-0">Tìm</button>
+                                </div>
+
+                            </form>
+                            <div class="chart-img ">
+                                <img class="img-fluid d-block mx-auto" src="img/Chart 5.png" alt="chart">
+                            </div>
+                        </div>
+                        <!-- tab cart -->
+                        <div id="tab2" class="tab-content tab-content-same">
+
+                            <h2 class="lexend text-orange fs-24 fw-bold text-center mt-3 pt-1">Đơn Hàng</h2>
+                            <div class="d-flex justify-content-between">
+                                <form class="d-flex align-items-center " action="#" method="get">
+                                    <div>
+                                        <input class="lexend fw-300 fs-15 text-black rounded-30" type="text"
+                                            value="31/10/2022 00:00 - 06/11/2022 00:00">
+                                    </div>
+                                    <div>
+                                        <button type="submit "
+                                            class="btn-orange text-white rounded-0 lexend fs-18 d-block border-0">Tìm</button>
+                                    </div>
+                                </form>
+                                <div class="d-flex btn-filter ms-auto">
+                                    <button class="fs-14 inter bg-white border-0 position-relative">
+                                        <img src="img/Filter.png" alt="">
+                                        Filter
+                                        <span class="badge pt-1 rounded-circle position-absolute"
+                                            style="background-color: #F76659;">1</span>
+                                    </button>
+                                </div>
+                                <div class="d-flex btn-filter">
+                                    <button class="fs-14 inter bg-white border-0">
+                                        <img src="img/arrow-up.png" alt="">
+                                        Export
+
+                                    </button>
+                                </div>
+                            </div>
+
+                            <table class="table inter">
+                                <thead class=" fs-12 fw-600 text-uppercase ">
+                                    <tr>
+                                        <th scope="col " style="font-weight: 600!important;">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <th scope="col " style="font-weight: 600!important;">Số tiền</th>
+                                        <th scope="col " style="font-weight: 600!important;">Trạng thái</th>
+                                        <th scope="col " style="font-weight: 600!important;">Mã đơn hàng</th>
+                                        <th scope="col " style="font-weight: 600!important;">Khách hàng</th>
+                                        <th scope="col " style="font-weight: 600!important;">Ngày ĐẶT HÀNG</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td>220.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td> Invoice 6B1E73DA–0017</td>
+                                        <td>manhhachkt08@gmail.com</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td>468.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>trungkienspktnd@gamail.com</td>
+                                        <td>Dec 29, 09:42 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">123.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>danghoang87hl@gmail.com</td>
+                                        <td>Dec 28, 11:14 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">987.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>trungkienspktnd@gamail.com</td>
+                                        <td>Dec 27, 09:42 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">982.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>ckctm12@gmail.com</td>
+                                        <td>Dec 26, 07:52 AM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">657.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>manhhachkt08@gmail.com</td>
+                                        <td>Dec 25, 05:18 AM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">2.000.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>vuhaithuongnute@gmail.com</td>
+                                        <td>Dec 24, 09:42 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">1.020.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>tranthuy.nute@gmail.com </td>
+                                        <td>Dec 23, 05:18 AM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">192.900</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>ckctm12@gmail.com</td>
+                                        <td>Dec 22, 11:26 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">73.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>tienlapspktnd@gmail.com</td>
+                                        <td>Dec 21, 07:28 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">149.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>nvt.isst.nute@gmail.com</td>
+                                        <td>Dec 20, 11:14 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">424.000</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Succeeded
+                                            </div>
+                                        </td>
+                                        <td>Invoice 6B1E73DA–0017</td>
+                                        <td>thuhang.nute@gmail.com</td>
+                                        <td>Dec 19, 11:14 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox" style="opacity:0 ;">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1" class="border-0">7.295.000</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link p-0 text-center border-0 " href="admin.html"
+                                            aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <img src="imgPD/Vector (3).png" alt="arrow">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active " aria-current="page">
+                                        <a class="p-0 text-center page-link text-white btn-orange border-0 fs-13"
+                                            href="login.html">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link color-title p-0 text-center border-0 fs-13"
+                                            href="login.html">2</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link p-0 text-center border-0" href="admin.html"
+                                            aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <img src="imgPD/Vector (4).png" alt="arrow">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- tab product -->
+                        <div id="tab3" class="tab-content tab-content-same">
+                            <h2 class="lexend text-orange fs-24 fw-bold text-center mt-3 pt-1">Sản phẩm</h2>
+                            <div class="d-flex justify-content-between">
+                                <form class="d-flex align-items-center" action="#" method="get">
+                                    <div>
+                                        <input class="lexend fw-300 fs-15 text-secondary rounded-30" type="text"
+                                            placeholder="Tên sản phẩm">
+                                    </div>
+                                    <div>
+                                        <button type="submit "
+                                            class="btn-orange text-white rounded-0 lexend fs-18 d-block border-0">Tìm</button>
+                                    </div>
+                                </form>
+                                <div class="d-flex">
+
+                                    <div class="d-flex btn-filter ms-auto">
+                                        <button class="fs-14 inter bg-white border-0 position-relative">
+                                            <img src="img/Filter.png" alt="">
+                                            Filter
+                                            <span class="badge pt-1 rounded-circle position-absolute"
+                                                style="background-color: #F76659;">1</span>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex btn-filter" style="margin-left:8px;">
+                                        <button class="fs-14 inter bg-white border-0">
+                                            <img src="img/arrow-up.png" alt="">
+                                            Export
+
+                                        </button>
+                                    </div>
+                                    <a href="Product.html" class="add-to-cart btn btn-orange inter fs-14 text-white">
+                                        <img src="img/ii.png" alt="">
+                                        <span>Thêm Sản Phẩm</span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <table class="table inter">
+                                <thead class=" fs-12 fw-600 text-uppercase ">
+                                    <tr>
+                                        <th scope="col " style="font-weight: 600!important;">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <th scope="col " style="font-weight: 600!important;">Mã SP</th>
+                                        <th scope="col " style="font-weight: 600!important;">TêN SP</th>
+                                        <th scope="col " style="font-weight: 600!important;">Giá tiền </th>
+                                        <th scope="col " style="font-weight: 600!important;">Đã bán</th>
+                                        <th scope="col " style="font-weight: 600!important;"> còn lại</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td>SP001</td>
+                                        <td>
+
+
+                                            Sườn xào chua ngọt
+
+                                        </td>
+                                        <td>53.000 VNĐ</td>
+                                        <td>10332</td>
+
+                                        <td>
+                                            202
+                                        </td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td>SP002</td>
+
+                                        <td>
+                                            Lươn xào muối ớt
+                                        </td>
+                                        <td>80.000 VNĐ</td>
+                                        <td>8023</td>
+                                        <td>20</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">SP003</td>
+                                        <td>
+                                            Ức Gà Làm Sạch
+                                        </td>
+                                        <td>33.000 VNĐ</td>
+                                        <td>4325</td>
+                                        <td>204</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">SP004</td>
+                                        <td>
+                                            Cải bó xôi Đà Lạt
+                                        </td>
+                                        <td>15.000 VNĐ</td>
+                                        <td>6056</td>
+                                        <td>207</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">SP005</td>
+                                        <td>
+                                            Dưa hấu mặt trời
+                                        </td>
+                                        <td>30.000 VNĐ</td>
+                                        <td>138</td>
+                                        <td>2034</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">SP006</td>
+                                        <td>
+                                            Thịt heo xay
+                                        </td>
+                                        <td>22.000 VNĐ</td>
+                                        <td>385</td>
+                                        <td>320</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">SP007</td>
+                                        <td>
+                                            Heo kho tiêu
+                                        </td>
+                                        <td>56.000 VNĐ</td>
+                                        <td>282</td>
+                                        <td>808</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">SP008</td>
+                                        <td>
+                                            Bao tử heo
+                                        </td>
+                                        <td>45.000 VNĐ</td>
+                                        <td>489 </td>
+                                        <td>284</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">SP009</td>
+                                        <td>
+                                            Ba rọi heo
+                                        </td>
+                                        <td>63.000 VNĐ</td>
+                                        <td>19242</td>
+                                        <td>185</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">SP0010</td>
+                                        <td>
+                                            Óc heo
+                                        </td>
+                                        <td>25.000 VNĐ</td>
+                                        <td>2524</td>
+                                        <td>273</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link p-0 text-center border-0 " href="login.html"
+                                            aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <img src="imgPD/Vector (3).png" alt="arrow">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active " aria-current="page">
+                                        <a class="p-0 text-center page-link text-white btn-orange border-0 fs-13"
+                                            href="login.html">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link color-title p-0 text-center border-0 fs-13"
+                                            href="login.html">2</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link p-0 text-center border-0" href="login.html"
+                                            aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <img src="imgPD/Vector (4).png" alt="arrow">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- tab blog -->
+                        <div id="tab4" class="tab-content tab-content-same">
+                            <h2 class="lexend text-orange fs-24 fw-bold text-center mt-3 pt-1">Tin tức</h2>
+                            <div class="d-flex justify-content-between">
+                                <form class="d-flex align-items-center" action="#" method="get">
+                                    <div>
+                                        <input class="lexend fw-300 fs-15 text-black rounded-30" type="text"
+                                            placeholder="Tên sản phẩm" value="31/10/2022 00:00 - 06/11/2022 00:00">
+                                    </div>
+                                    <div>
+                                        <button type="submit "
+                                            class="btn-orange text-white rounded-0 lexend fs-18 d-block border-0">Tìm</button>
+                                    </div>
+                                </form>
+                                <div class="d-flex">
+
+                                    <div class="d-flex btn-filter ms-auto">
+                                        <button class="fs-14 inter bg-white border-0 position-relative">
+                                            <img src="img/Filter.png" alt="">
+                                            Filter
+                                            <span class="badge pt-1 rounded-circle position-absolute"
+                                                style="background-color: #F76659;">1</span>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex btn-filter" style="margin-left:8px;">
+                                        <button class="fs-14 inter bg-white border-0">
+                                            <img src="img/arrow-up.png" alt="">
+                                            Export
+
+                                        </button>
+                                    </div>
+                                    <a href="Product.html" class="add-to-cart btn btn-orange inter fs-14 text-white">
+                                        <img src="img/ii.png" alt="">
+                                        <span>Thêm Tin tức</span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <table class="table inter">
+                                <thead class=" fs-12 fw-600 text-uppercase ">
+                                    <tr>
+                                        <th scope="col " style="font-weight: 600!important;">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <th scope="col " style="font-weight: 600!important;">ID </th>
+                                        <th scope="col " style="font-weight: 600!important;">Tiêu đề</th>
+                                        <th scope="col " style="font-weight: 600!important;">mục </th>
+                                        <th scope="col " style="font-weight: 600!important;">ngÀY ĐĂNG</th>
+                                        <th scope="col " style="font-weight: 600!important;"> người đăng</th>
+                                        <th scope="col">views</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td>TT001</td>
+                                        <td>
+
+
+                                            Mùng 1 tết nên ăn gì cho may mắn?
+
+                                        </td>
+                                        <td>Cùng FOODBOX vào bếp</td>
+                                        <td>Dec 30, 09:42 PM</td>
+
+                                        <td>
+                                            kiennh
+                                        </td>
+                                        <td>17000</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td>TT002</td>
+
+                                        <td>
+                                            15 phút cho món thịt bò bít tết ngon
+                                        </td>
+                                        <td>Cùng FOODBOX vào bếp</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>kiennh</td>
+                                        <td>20000</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT003</td>
+                                        <td>
+                                            Khao món ngon giá hời - Tiết kiệm tới 50%
+                                        </td>
+                                        <td>Tin tức khuyến mãi</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>namtt</td>
+                                        <td>25600</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT004</td>
+                                        <td>
+                                            Mỳ Ý hải sản sốt cà chua ngon tuyệt
+                                        </td>
+                                        <td>Cùng FOODBOX vào bếp</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>kiennh</td>
+                                        <td>9000</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT005</td>
+                                        <td>
+                                            Cùng Foodbox tích sao ngay - Tặng quà liền tay
+                                        </td>
+                                        <td>Tin tức khuyến mãi</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>namtt</td>
+                                        <td>8256</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT006</td>
+                                        <td>
+                                            Mùng 1 tết nên ăn gì cho may mắn?
+                                        </td>
+                                        <td>Cùng FOODBOX vào bếp</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>kiennh</td>
+                                        <td>1772</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT007</td>
+                                        <td>
+                                            15 phút cho món thịt bò bít tết ngon
+                                        </td>
+                                        <td>Cùng FOODBOX vào bếp</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>kiennh</td>
+                                        <td>1822</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT008</td>
+                                        <td>
+                                            Hè vui rực rỡ - FOODBOX sale sốc hết cỡ
+                                        </td>
+                                        <td>Tin tức khuyến mãi</td>
+                                        <td>Dec 30, 09:42 PM </td>
+                                        <td>namtt</td>
+                                        <td>2929</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT009</td>
+                                        <td>
+                                            Mỳ Ý hải sản sốt cà chua ngon tuyệt
+                                        </td>
+                                        <td>Cùng FOODBOX vào bếp</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>kiennh</td>
+                                        <td>2315</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT010</td>
+                                        <td>
+                                            Cùng Foodbox tích sao ngay - Tặng quà liền tay
+                                        </td>
+                                        <td>Tin tức khuyến mãi</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>namtt</td>
+                                        <td>19992</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT011</td>
+                                        <td>
+                                            Mỳ Ý hải sản sốt cà chua ngon tuyệt
+                                        </td>
+                                        <td>Cùng FOODBOX vào bếp</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>namtt</td>
+                                        <td>1232</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT012</td>
+                                        <td>
+                                            Khao món ngon giá hời - Tiết kiệm tới 50%
+                                        </td>
+                                        <td>Tin tức khuyến mãi</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>namtt</td>
+                                        <td>12233</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">TT010</td>
+                                        <td>
+                                            15 phút cho món thịt bò bít tết ngon
+                                        </td>
+                                        <td>Cùng FOODBOX vào bếp</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>kiennh</td>
+                                        <td>5674</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link p-0 text-center border-0 " href="admin.html"
+                                            aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <img src="imgPD/Vector (3).png" alt="arrow">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active " aria-current="page">
+                                        <a class="p-0 text-center page-link text-white btn-orange border-0 fs-13"
+                                            href="login.html">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link color-title p-0 text-center border-0 fs-13"
+                                            href="login.html">2</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link p-0 text-center border-0" href="admin.html"
+                                            aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <img src="imgPD/Vector (4).png" alt="arrow">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- tab data -->
+                        <div id="tab5" class="tab-content tab-content-same">
+                            <h2 class="lexend text-orange fs-24 fw-bold text-center mt-3 pt-1">Data mới</h2>
+                            <div class="d-flex justify-content-between">
+                                <form class="d-flex align-items-center" action="#" method="get">
+                                    <div>
+                                        <input class="lexend fw-300 fs-15 text-secondary rounded-30" type="text"
+                                            placeholder="Tên khách hàng">
+                                    </div>
+                                    <div>
+                                        <button type="submit "
+                                            class="btn-orange text-white rounded-0 lexend fs-18 d-block border-0">Tìm</button>
+                                    </div>
+                                </form>
+                                <div class="d-flex btn-filter ms-auto">
+                                    <button class="fs-14 inter bg-white border-0 position-relative">
+                                        <img src="img/Filter.png" alt="">
+                                        Filter
+                                        <span class="badge pt-1 rounded-circle position-absolute"
+                                            style="background-color: #F76659;">1</span>
+                                    </button>
+                                </div>
+                                <div class="d-flex btn-filter">
+                                    <button class="fs-14 inter bg-white border-0">
+                                        <img src="img/arrow-up.png" alt="">
+                                        Export
+
+                                    </button>
+                                </div>
+                            </div>
+
+                            <table class="table inter">
+                                <thead class=" fs-12 fw-600 text-uppercase ">
+                                    <tr>
+                                        <th scope="col " style="font-weight: 600!important;">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <th scope="col " style="font-weight: 600!important;">Mã KH</th>
+                                        <th scope="col " style="font-weight: 600!important;">Trạng thái</th>
+                                        <th scope="col " style="font-weight: 600!important;">Tên kHÁCH HÀNG</th>
+                                        <th scope="col " style="font-weight: 600!important;">SỐ ĐIỆN THOẠI</th>
+                                        <th scope="col " style="font-weight: 600!important;">Ngày ĐIỀN FORM</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td>KH191</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td> Ngô Thị Hồng Ngọc</td>
+                                        <td>0977637037</td>
+                                        <td>Dec 30, 09:42 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td>KH192</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Dương Xuân Việt</td>
+                                        <td>0979551605</td>
+                                        <td>Dec 29, 09:42 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH193</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Đoàn Nam Xuân Thoại</td>
+                                        <td>0786777722</td>
+                                        <td>Dec 28, 11:14 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH194</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Lương Quốc Bảo</td>
+                                        <td>0911439323</td>
+                                        <td>Dec 27, 09:42 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH195</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Nguyễn Thị Bảo Ngọc</td>
+                                        <td>0333484499</td>
+                                        <td>Dec 26, 07:52 AM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH196</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Bùi Thị Thanh Thảo</td>
+                                        <td>0326819421</td>
+                                        <td>Dec 25, 05:18 AM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH197</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Nguyễn Thị Diệu Linh</td>
+                                        <td>0934547327</td>
+                                        <td>Dec 24, 09:42 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH198</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Nguyễn Thị Hồng Ngọc</td>
+                                        <td>0838679003 </td>
+                                        <td>Dec 23, 05:18 AM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH199</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Phạm Phương An</td>
+                                        <td>0944896905</td>
+                                        <td>Dec 22, 11:26 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH200</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Chu Thị Cẩm Vân</td>
+                                        <td>0979551605</td>
+                                        <td>Dec 21, 07:28 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH201</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Trịnh Minh Vương</td>
+                                        <td>0347753836</td>
+                                        <td>Dec 20, 11:14 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH202</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Nguyễn Thị Thanh Hiền</td>
+                                        <td>0962618483</td>
+                                        <td>Dec 19, 11:14 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                            </label>
+                                        </th>
+                                        <td colspan="1">KH203</td>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/checkk.png" alt="">
+                                                Đã gọi
+                                            </div>
+                                        </td>
+                                        <td>Bùi Thụy Hoa</td>
+                                        <td>0365503654</td>
+                                        <td>Dec 18, 11:26 PM</td>
+                                        <td>
+                                            <img src="img/dot3.png" alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- tab member -->
+                        <div id="tab6" class="tab-content tab-content-same">
+                            <h2 class="lexend text-orange fs-24 fw-bold text-center mt-3 pt-1">Nhân viên</h2>
+                            <div class="d-flex justify-content-between">
+                                <form class="d-flex align-items-center mx-auto" action="#" method="get">
+                                    <div>
+                                        <input class="lexend fw-300 fs-15 text-black rounded-30" type="text"
+                                            placeholder="Tên nhân viên">
+                                    </div>
+                                    <div>
+                                        <button type="submit "
+                                            class="btn-orange text-white rounded-0 lexend fs-18 d-block border-0">Tìm</button>
+                                    </div>
+                                </form>
+                                <div class="d-flex">
+
+                                    <div class="d-flex btn-filter ms-auto">
+                                        <button class="fs-14 inter bg-white border-0 position-relative">
+                                            <img src="img/Filter.png" alt="">
+                                            Filter
+                                            <!-- <span class="badge pt-1 rounded-circle position-absolute"
+                                                style="background-color: #F76659;">1</span> -->
+                                        </button>
+                                    </div>
+                                    <div class="d-flex btn-filter" style="margin-left:8px;">
+                                        <button class="fs-14 inter bg-white border-0">
+                                            <img src="img/arrow-up.png" alt="">
+                                            Export
+
+                                        </button>
+                                    </div>
+                                    <a href="#" class="add-to-cart btn  inter fs-14 text-white"
+                                        style="background-color: #4094F7;">
+                                        <img src="img/ii.png" alt="">
+                                        <span>Thêm Nhân Viên</span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <table class="table inter">
+                                <thead class=" fs-12 fw-600 text-uppercase ">
+                                    <tr>
+                                        <th scope="col ">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Name
+                                            </label>
+                                        </th>
+                                        <th scope="col ">Status
+                                            <img class="pb-1 ps-1" src="img/down-grey.png" alt="">
+                                        </th>
+                                        <th scope="col ">Role
+                                            <img class="pb-1 ps-1" src="img/what.png" alt="">
+                                        </th>
+                                        <th scope="col ">Email address </th>
+                                        <th scope="col ">Teams</th>
+
+                                        <th scope="col"></th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Trương Tuấn Nam
+                                                <div class="fw-normal">@namtt</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            Product Designer
+
+                                        </td>
+                                        <td>namtt@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Nguyễn Huy Kiên
+                                                <div class="fw-normal">@kiennh</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            Product Manager
+
+                                        </td>
+                                        <td>kiennh@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Trương Tuấn Nam
+                                                <div class="fw-normal">@namtt</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            Product Designer
+
+                                        </td>
+                                        <td>namtt@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Nguyễn Linh Chi
+                                                <div class="fw-normal">@chinl</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            Copy Writer
+
+                                        </td>
+                                        <td>chinl@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Nguyễn Tường San
+                                                <div class="fw-normal">@sannt</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            Copy Writer
+
+                                        </td>
+                                        <td>sannt@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Lỗ Hương Linh
+                                                <div class="fw-normal">@linhlh</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            Content Marketing
+
+                                        </td>
+                                        <td>linhlh@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Trương Trà My
+                                                <div class="fw-normal">@mytt</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            UX Designer
+
+                                        </td>
+                                        <td>mytt@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Ngô Hải Trung
+                                                <div class="fw-normal">@trungnh</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            UX Copywriter
+
+                                        </td>
+                                        <td>trungnh@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Bàn Thị Giang
+                                                <div class="fw-normal">@giangbt</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            UI Designer
+
+                                        </td>
+                                        <td>giangbt@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Mai Hồng Khanh
+                                                <div class="fw-normal">@khanhmh</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            Product Manager
+
+                                        </td>
+                                        <td>khanhmh@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label class="checkbox ">
+                                                <input type="checkbox" class="checkbox__input" />
+                                                <span class="checkbox__inner"></span>
+                                                Nguyễn Hoàng Việt
+                                                <div class="fw-normal">@vietnh</div>
+                                            </label>
+
+                                        </th>
+                                        <td>
+                                            <div class="called">
+                                                <img src="img/dot.png" alt="">
+                                                Active
+                                            </div>
+                                        </td>
+                                        <td>
+
+
+                                            UX Designer
+
+                                        </td>
+                                        <td>vietnh@foodbox.vn</td>
+                                        <td>
+                                            <img src="img/Badges.png" alt="">
+                                        </td>
+
+                                        <td>
+                                            <button class="me-4 border-0 bg-white delete">
+                                                <img src="img/delete.png" alt="delete">
+                                            </button>
+                                            <button class=" border-0 bg-white edit ">
+                                                <img src="img/edit.png" alt="">
+                                            </button>
+                                        </td>
+
+
+
+                                    </tr>
+
+
+
+
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link p-0 text-center border-0 " href="admin.html"
+                                            aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <img src="imgPD/Vector (3).png" alt="arrow">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active " aria-current="page">
+                                        <a class="p-0 text-center page-link text-white btn-orange border-0 fs-13"
+                                            href="admin.html">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link color-title p-0 text-center border-0 fs-13"
+                                            href="admin.html">2</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link p-0 text-center border-0" href="admin.html"
+                                            aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <img src="imgPD/Vector (4).png" alt="arrow">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- Bootstrap CDN js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- END Bootstrap CDN js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+.fs-15 {
+    font-size: 15px;
+}
+
+.breakcumb-item a {
+    color: #737373;
+}
+
+.about-1 p.text-description {
+    max-width: 744px;
+}
+
+@media(max-width:992px) and (min-width:767px) {
+    .about-1 h1 {
+        font-size: 40px;
+    }
+
+    .about-1 h2.fs-32 {
+        font-size: 24px;
+    }
+
+    .about-1 h2.fs-32+p {
+        max-width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .about-1 p.text-description {
+        max-width: 630px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+
+    .about-1~.about h2.fs-32 {
+        font-size: 22px;
+    }
+
+    .about-1~.about h2.fs-32+p.fs-18 {
+        font-size: 14px;
+    }
+
+
+}
+
+@media(max-width:767px) {
+    .breakcumb-item.fs-15 {
+        font-size: 12px;
+    }
+
+    .about-1 h1 {
+        font-size: 24px;
+    }
+
+    .about-1 h2 {
+        font-size: 18px;
+    }
+
+    .about-1 p.fs-18 {
+        font-size: 16px;
+    }
+
+    .banner-about img {
+        height: 163px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .about-1 p.text-description {
+        font-size: 12px;
+    }
+
+    header {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.467);
+    }
+}
+
+
+
+
+
+/*about 2*/
+.grid-column-3 {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about-2 .grid-column-3 {
+    gap: 30px;
+}
+
+.about-2 .grid-column-3>div {
+    border: 1px solid #B4B4B4;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0px 1px 20px 0px #00000016;
+
+}
+
+.about-2 p.text-description {
+    max-width: 236px;
+    text-align: left;
+
+}
+
+@media(max-width:992px) {
+    .about-2 .d-grid p {
+        font-size: 13px;
+    }
+
+    .about-2 .d-grid img {
+        height: 130px;
+    }
+
+    .about-2 .d-grid h3 {
+        font-size: 16px;
+    }
+
+    .about-2 h2+p {
+        max-width: 630px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+}
+
+@media(max-width:767px) {
+
+    .about-2 h2 {
+        font-size: 20px;
+    }
+
+    .about-2 .grid-column-3 {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .about-2 .grid-column-3>div {
+        padding-top: 0;
+    }
+
+    .about-2 h3 {
+        font-size: 18px !important;
+    }
+
+    .about-2 .slogan {
+        font-size: 14px;
+    }
+
+    .about-2 .grid-column-3 p {
+        text-align: center;
+    }
+
+    .about-2 .grid-column-3>div {
+        border: 0;
+    }
+
+
+
+}
+
+/*end about   2*/
+
+/*about 3*/
+.about-3 img {
+    max-height: 210px;
+    max-width: 210px;
+    display: block;
+    margin: auto;
+}
+
+@media(max-width:767px) {
+    .about-3 h2 {
+        font-size: 20px;
+    }
+
+    .about-3 h2+p {
+        font-size: 12px;
+
+    }
+
+    .about-3 .grid-column-3 {
+        gap: 30px
+    }
+
+    .about-3 img {
+        max-width: 100%;
+        max-height: unset;
+    }
+
+    header {
+        border: 1px solid #3737374d;
+    }
+
+}
+
+/*end about 3*/
+.about-4 p {
+
+    line-height: 18px;
+    ;
+}
+
+@media(max-width:992px) {
+    .about-4 p {
+        font-size: 14px;
+        line-height: 17.5px;
+    }
+
+    .about-4 img {
+        height: 592px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .about-4 h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-4 .row>div {
+        padding: 0 15px !important;
+    }
+
+    .about-4 {
+        margin-top: 20px;
+
+    }
+}
+
+@media(max-width:767px) {
+    .about-4 {
+        padding-bottom: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+.about-5 {
+    padding-bottom: 185px;
+}
+
+.contact-item:first-child img {
+    width: 72px;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.about-5 iframe {
+    border-radius: 16px;
+    width: 100%;
+}
+
+@media(max-width:992px) {
+    .about-5 iframe {
+        height: 260px;
+    }
+
+    .about-5 li span {
+        font-size: 14px;
+    }
+
+    .about-5 {
+        padding-bottom: 70px
+    }
+
+    .about-5 li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-5 h2 {
+        font-size: 22px;
+        text-align: center;
+        ;
+    }
+
+    .about-5 ul {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0 !important;
+    }
+
+    .contact-item:first-child img {
+        width: 30px;
+
+    }
+
+}

@@ -1,0 +1,206 @@
+.breakcumb {
+    padding-top: 48px;
+}
+
+.cart table * {
+    text-align: center;
+}
+
+table td.position-absolute {
+    padding-right: 105px;
+}
+
+table .add-product {
+    border: 1px solid #F36905;
+    border-radius: 25px;
+
+}
+
+table .add-product:hover {
+    color: #F36905 !important;
+    background-color: #fff;
+    border: 1px solid #F36905;
+}
+
+table tr {
+    height: 100px;
+
+}
+
+table td {
+    line-height: 80px
+}
+
+table thead tr {
+    height: 80px
+}
+
+.cart .btn-checkout {
+    max-width: 350px;
+    border-radius: 25px;
+    margin-top: 50px;
+    min-height: 60px;
+    line-height: 60px;
+}
+
+@media (max-width:1023px) and (min-width:767px) {
+    .cart .btn-checkout {
+        max-width: 270px;
+        line-height: 45px;
+        min-height: 45px;
+    }
+}
+
+table thead tr th {
+    line-height: 60px
+}
+
+table .quantitys {
+    line-height: 1.5;
+    width: 110px;
+    margin: auto;
+    border: 1px solid #ACACAC;
+    padding: 0 10px;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+/* table .quantitys {} */
+
+table input[type=number]:focus {
+    outline: none;
+}
+
+table input::-webkit-outer-spin-button,
+table input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+table input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media(max-width:992px) {
+    table .quantitys {
+        width: 90px;
+    }
+}
+
+.slick-arrow {
+    width: 30px !important;
+    height: 30px !important;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    border: 0;
+    background-color: transparent;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 0;
+}
+
+
+
+.slick-dots button {
+    border: 0 !important;
+
+}
+
+.slick-next.slick-arrow {
+    right: 0
+}
+
+.product .p-10 {
+    padding: 0 15px !important;
+}
+
+.cart .Special-food .badge.position-absolute.top-22 {
+    left: 14px;
+}
+
+.cart .add-to-cart.position-absolute {
+    right: 26px;
+    bottom: 10px;
+}
+
+
+.slick-prev.slick-arrow {
+    left: -40px;
+}
+
+.slick-prev.slick-arrow::before {
+    content: url(img/prev.png);
+}
+
+
+.slick-next.slick-arrow {
+    right: -40px;
+}
+
+.slick-next.slick-arrow::before {
+    content: url(img/next.png);
+}
+
+.cart {
+    padding-bottom: 119px;
+}
+
+.cart .product:nth-child(2)~div {
+    display: block;
+}
+
+@media(max-width:767px) {
+    .cart .product-content {
+        position: relative;
+    }
+
+    .cart {
+        padding-bottom: 60px;
+    }
+
+    header {
+        border: 1px solid #3737374d;
+    }
+}
+
+@media(max-width:576px) {
+    .cart .responsive {
+        width: 100vw;
+        margin-left: -16px;
+    }
+}
+
+
+/* table-mobile */
+
+.table-mobile {
+    border: 1px solid #ACACAC;
+    overflow: hidden;
+}
+
+.table-mobile .price-title {
+    color: #8e8e8e;
+}
+
+.table-mobile #quantity {
+    width: 50px;
+    height: 25px;
+}
+
+.table-mobile>.border-1 {
+    border-bottom: 1px solid #B4B4B4;
+}
+
+.table-mobile .table-row a {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <!-- Bootstrap CDN css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- END Bootstrap CDN css-->
+
+    <!--IMPORT HEADER AND FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <!-- END IMPORT HEADER AND FOOTER -->
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- END HEADER -->
+
+
+
+    <section class="cart">
+        <div class="container">
+            <div class="breakcumb">
+                <ul class="d-flex list-unstyled">
+                    <li class="breakcumb-item d-flex align-items-center fs-15">
+                        <a href="index.html" target="_blank" class="breakcumb-link lexend  fw-300 ">Trang chủ /</a>
+                    </li>
+                    <li class="breakcumb-item text-orange fs-15 fw-300 lexend ms-2">
+                        Giỏ hàng
+                    </li>
+                </ul>
+
+            </div>
+            <h1 class="lexend fw-600 fs-28 color-title text-center">Giỏ hàng</h1>
+            <table class="table table-bordered lexend text-black d-none d-md-table">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Thịt bò Mỹ nhập khẩu (400g)</td>
+                        <td>200.000đ</td>
+                        <td class="position-relative">
+                            <div class="d-flex quantitys position-absolute">
+                                <button class="lexend text-black border-0 bg-white decrease"
+                                    onclick="decreaseValue() ">-</button>
+                                <input type="number" step="1" class="d-block w-100 border-0 quantity" value="1" min="1"
+                                    max="200" id="number">
+                                <button class="lexend text-black border-0 bg-white increase "
+                                    onclick=" increaseValue() ">+</button>
+                            </div>
+                        </td>
+                        <td class="text-orange">200.000đ</td>
+                        <td>
+                            <button class="border-0 bg-white remove">
+                                <img src="img-cart/icons8_Delete_48px 2.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bắp cải thảo Đà Lạt</td>
+                        <td>25.000đ</td>
+                        <td class="position-relative ">
+                            <div class="d-flex quantitys position-absolute">
+                                <button class="lexend text-black border-0 bg-white decrease"
+                                    onclick="decreaseValue2() ">-</button>
+                                <input type="number" step="1" class="d-block w-100 border-0 quantity" value="2" min="1"
+                                    max="200" id="number-2">
+                                <button class="lexend text-black border-0 bg-white increase "
+                                    onclick=" increaseValue2() ">+</button>
+                            </div>
+
+                        </td>
+                        <td class="text-orange">50.000đ</td>
+                        <td>
+                            <button class="border-0 bg-white remove">
+                                <img src="img-cart/icons8_Delete_48px 2.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="position-relative">
+                        <td colspan="1" class="border-end-0">
+                            <a href="Product.html" class="btn lexend fw-500 fs-15 text-orange add-product px-4 py-2">
+                                <img src="img-cart/Vector (2).png" alt="">
+                                Chọn thêm sản phẩm</a>
+                        </td>
+
+                        <td colspan="1" class="border-start-0 position-absolute end-0 fw-600 ">Tổng tiền (tạm
+                            tính):<span class="text-orange"> 250.000đ</span>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="checkout.html"
+                class="btn btn-orange btn-checkout p-0 fs-20 text-white d-block mx-auto lexend d-md-block d-none">Tiến
+                hành thanh
+                toán</a>
+            <!-- table mobile -->
+            <div class="d-md-none table-mobile rounded-15">
+                <div class="border-1 table-row px-3 py-3">
+                    <h4 class="lexend color-title fs-16">Bắp cải thảo Đà Lạt (200g)</h4>
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <p class="lexend fw-300 fs-14 price-title">Đơn giá : 100.000đ</p>
+                            <p class="lexend fw-300 fs-14 price-title">Thành tiền :</p>
+                        </div>
+                        <div class="center">
+                            <p class="lexend fw-300 fs-14 price-title">Số lượng :</p>
+                            <p class="price lexend text-orange">50.000đ</p>
+
+                        </div>
+                        <div class="right">
+                            <select class="d-block rounded-15 fs-14 ps-2 " name="quanity" id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+
+                            </select>
+                            <button class="d-block lexend fs-12 border-0 bg-white mt-3 remove">
+                                <img class="me-1" src="img/remove-2.png" alt="remove">
+                                Xóa</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="border-1 mt-3 table-row px-3 py-3">
+                    <h4 class="lexend color-title fs-16">Thịt bò Mỹ nhập khẩu (400g)</h4>
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <p class="lexend fw-300 fs-14 price-title">Đơn giá : 100.000đ</p>
+                            <p class="lexend fw-300 fs-14 price-title">Thành tiền :</p>
+                        </div>
+                        <div class="center">
+                            <p class="lexend fw-300 fs-14 price-title">Số lượng :</p>
+                            <p class="price lexend text-orange">200.000đ</p>
+
+                        </div>
+                        <div class="right">
+                            <select class="d-block rounded-15 fs-14 ps-2 " name="quanity" id="quantity">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+
+                            </select>
+                            <button class="d-block lexend fs-12 border-0 bg-white mt-3 remove">
+                                <img class="me-1" src="img/remove-2.png" alt="remove">
+                                Xóa</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-between px-3 py-3">
+                    <h3 class="lexend fs-16 price-title">Tổng tiền</h3>
+                    <div class="toal-price lexend text-orange fs-16 fw-600 mx-auto">200.000đ</div>
+                </div>
+                <div class="table-row  d-flex justify-content-between">
+
+                    <a href="Product.html" class="btn add-product text-center lexend fs-12 fw-500 text-orange">
+                        <img class="mb-1" src="img-cart/Vector (2).png" alt="add">
+                        Chọn thêm sản phẩm</a>
+                    <a href="checkout.html"
+                        class="to-checkout btn rounded-0 lexend text-orange text-center d-block btn-orange fs-12 fw-500 text-white">Tiến
+                        hành
+                        thanh toán
+                        <img src="img-cart/arrow_right_alt.png" alt="arrow_right_alt">
+                    </a>
+                </div>
+            </div>
+            <!-- slide prouct -->
+            <section class="Special-food pt-4 p-0">
+                <div class="container ">
+                    <div class="row  mt-md-4 mt-0 mb-4 mb-md-0">
+                        <div class="col-md-5  col-sm-5 col-lg-auto col-7 ">
+                            <h2 class="color-title lexend fw-bold fs-tablet-26 fs-32">Các sản phẩm đã xem </h2>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <div class="line-orange w-100"></div>
+                        </div>
+                    </div>
+                    <div class="row responsive  position-relative products mt-lg-5 mt-md-4 autoplay">
+                        <div class="product rounded-20 position-relative ">
+                            <div class="p-10">
+                                <div class="product-image ">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <img class="img-fluid d-block m-0 w-100" src="img/Rectangle 5.png"
+                                            alt="suon xao">
+                                    </a>
+                                </div>
+                                <div class="product-content border-1 p-2">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <h3 class="product-title color-title fs-20">Sườn xào chua ngọt</h3>
+                                    </a>
+                                    <p class="text-grey-product lexend mb-0"> Sơ chế / 3 người</p>
+                                    <div class="product-price  lexend">
+                                        <span class="text-orange fw-600 fs-20">82.000đ</span>
+                                        <!-- <del class="old-price ms-5 lexend">144.000đ</del> -->
+                                    </div>
+                                    <a href="#" class="add-to-cart position-absolute ">
+                                        <img src="img/addtocart.png" alt="add-to-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product rounded-20 position-relative ">
+                            <div class="p-10">
+                                <div class="product-image ">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <img class="img-fluid d-block m-0 w-100" src="img/Rectangle 5 (1).png"
+                                            alt="suon xao">
+                                    </a>
+                                </div>
+                                <div class="product-content border-1 p-2">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <h3 class="product-title color-title fs-20">Heo kho tiêu</h3>
+                                    </a>
+                                    <p class="text-grey-product lexend mb-0"> Sơ chế / 2 người</p>
+                                    <div class="product-price  lexend">
+                                        <span class="text-orange fw-600 fs-20">57.000đ</span>
+                                        <!-- <del class="old-price ms-5 lexend">144.000đ</del> -->
+                                    </div>
+                                    <a href="#" class="add-to-cart position-absolute ">
+                                        <img src="img/addtocart.png" alt="add-to-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product rounded-20 position-relative ">
+
+                            <div class="p-10">
+                                <div class="product-image ">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <img class="img-fluid d-block m-0 w-100" src="img/Rectangle 5 (2).png"
+                                            alt="suon xao">
+                                    </a>
+                                </div>
+                                <div class="product-content border-1 p-2">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <h3 class="product-title color-title fs-20">Sườn nướng BBQ</h3>
+                                    </a>
+                                    <p class="text-grey-product lexend mb-0"> Sơ chế / 2 người</p>
+                                    <div class="product-price  lexend">
+                                        <span class="text-orange fw-600 fs-20">93.000đ</span>
+                                        <!-- <del class="old-price ms-5 lexend">144.000đ</del> -->
+                                    </div>
+                                    <a href="#" class="add-to-cart position-absolute ">
+                                        <img src="img/addtocart.png" alt="add-to-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" product rounded-20 position-relative">
+                            <div class="p-10">
+                                <div class="product-image ">
+                                    <span class="badge lexend bg-white position-absolute top-22">-25%</span>
+                                    <img class="img-fluid d-block m-0 w-100" src="img/Rectangle 5 (3).png"
+                                        alt="suon xao">
+                                </div>
+                                <div class="product-content border-1 p-2">
+                                    <h3 class="product-title color-title fs-20">Set cơm việt K</h3>
+                                    <p class="text-grey-product lexend mb-0"> Sơ chế / 3 người</p>
+                                    <div class="product-price  lexend">
+                                        <span class="text-orange fw-600 fs-20">108.000đ</span>
+                                        <!-- <del class="old-price ms-lg-5 lexend">200.000đ</del> -->
+                                    </div>
+                                    <a href="#" class="add-to-cart position-absolute ">
+                                        <img src="img/addtocart.png" alt="add-to-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product rounded-20 position-relative ">
+                            <div class="p-10">
+                                <div class="product-image ">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <span class="badge lexend bg-white position-absolute top-22">-25%</span>
+                                        <img class="img-fluid d-block m-0 w-100" src="img/Rectangle 5 (3).png"
+                                            alt="suon xao">
+                                    </a>
+                                </div>
+                                <div class="product-content border-1 p-2">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <h3 class="product-title color-title fs-20">Set cơm việt K</h3>
+                                    </a>
+                                    <p class="text-grey-product lexend mb-0"> Sơ chế / 3 người</p>
+                                    <div class="product-price  lexend">
+                                        <span class="text-orange fw-600 fs-20">108.000đ</span>
+                                        <!-- <del class="old-price ms-lg-5 lexend">200.000đ</del> -->
+                                    </div>
+                                    <a href="#" class="add-to-cart position-absolute ">
+                                        <img src="img/addtocart.png" alt="add-to-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product rounded-20 position-relative ">
+                            <div class="p-10">
+                                <div class="product-image ">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <span class="badge lexend bg-white position-absolute top-22">-25%</span>
+                                        <img class="img-fluid d-block m-0 w-100" src="img/Rectangle 5 (3).png"
+                                            alt="suon xao">
+                                    </a>
+                                </div>
+                                <div class="product-content border-1 p-2">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <h3 class="product-title color-title fs-20">Set cơm việt K</h3>
+                                    </a>
+                                    <p class="text-grey-product lexend mb-0"> Sơ chế / 3 người</p>
+                                    <div class="product-price  lexend">
+                                        <span class="text-orange fw-600 fs-20">108.000đ</span>
+                                        <!-- <del class="old-price ms-lg-5 lexend">200.000đ</del> -->
+                                    </div>
+                                    <a href="#" class="add-to-cart position-absolute ">
+                                        <img src="img/addtocart.png" alt="add-to-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product rounded-20 position-relative">
+                            <div class="p-10">
+                                <div class="product-image ">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <span class="badge lexend bg-white position-absolute top-22">-25%</span>
+                                        <img class="img-fluid d-block m-0 w-100" src="img/Rectangle 5 (3).png"
+                                            alt="suon xao">
+                                    </a>
+                                </div>
+                                <div class="product-content border-1 p-2">
+                                    <a href="singleProduct.html" class="d-block">
+                                        <h3 class="product-title color-title fs-20">Set cơm việt K</h3>
+                                    </a>
+                                    <p class="text-grey-product lexend mb-0"> Sơ chế / 3 người</p>
+                                    <div class="product-price  lexend">
+                                        <span class="text-orange fw-600 fs-20">108.000đ</span>
+                                        <!-- <del class="old-price ms-lg-5 lexend">200.000đ</del> -->
+                                    </div>
+                                    <a href="#" class="add-to-cart position-absolute ">
+                                        <img src="img/addtocart.png" alt="add-to-cart">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+    </section>
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- END FOOTER -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <!-- Bootstrap CDN js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- END Bootstrap CDN js -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

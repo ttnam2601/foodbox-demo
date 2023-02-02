@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <!-- Bootstrap CDN css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- END Bootstrap CDN css-->
+
+    <!--IMPORT HEADER AND FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!-- END IMPORT HEADER AND FOOTER -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="singleProduct.css">
+    <link rel="stylesheet" href="blog.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <!-- END HEADER -->
+
+
+    <section class="blog">
+        <div class="container">
+            <div class="breakcumb">
+                <ul class="d-flex list-unstyled">
+                    <li class="breakcumb-item d-flex align-items-center fs-15">
+                        <a href="index.html" class="breakcumb-link lexend  fw-300 ">Trang chủ / </a>
+
+
+                    </li>
+                    <li class="breakcumb-item text-orange fs-15 fw-300 lexend ms-2">
+                        Tin tức
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 p-0 pe-30">
+                    <div class="Featured-post rounded-20">
+                        <div class="Featured-post-img">
+                            <a href="singleBlog.html">
+                                <img class="img-fluid w-100" src="img/mung-1-nen-an-gi-2 1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="Featured-post-content">
+                            <a href="singleBlog.html">
+
+                                <h3 class="lexend color-title fw-600  fs-26">Mùng 1 tết nên ăn gì cho may mắn?</h3>
+                            </a>
+                            <div class="d-flex gap-3">
+                                <div class="d-flex gap-2">
+                                    <div class="icon-date">
+                                        <img src="img/date.png" alt="date">
+                                    </div>
+                                    <div class="date-text lexend fs-14 fw-300 mt-1">11/10/2022</div>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <div class="icon-date">
+                                        <img src="img/akar-icons_eye.png" alt="date">
+                                    </div>
+                                    <div class="date-text lexend fs-14 fw-300 mt-1">17k</div>
+                                </div>
+                                <div class="d-flex gap-2 border-left">
+                                    <div class="icon-date">
+                                        <img src="img/tym.png" alt="date">
+                                    </div>
+                                    <div class="date-text lexend fs-14 fw-300 mt-1">8445</div>
+                                </div>
+                            </div>
+                            <p class="lexend fs-18 fw-300 text-black mt-2">Mùng 1 Tết Âm lịch là ngày lễ truyền thống
+                                lớn
+                                nhất của người dân Việt Nam. Vì thế nên nhiều người đặt ra câu hỏi mùng 1 Tết nên ăn gì
+                                để may mắn, thuận lợi cả năm. Hãy cùng FOODBOX tham khảo trong bài viết dưới đây nhé.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-5 d-md-block d-none products-related p-0 d-lg-block">
+
+
+                    <div class="product-item d-flex mt-0 rounded-20 position-relative">
+                        <a class="d-block" href="singleProduct.html">
+                            <img src="img/pp.png" class="img-fluid img-product w-100" alt="">
+                        </a>
+
+                        <div class="product-content pe-2">
+                            <a href="singleProduct.html">
+                                <h4 class="lexend fs-20 color-title mt-3">Sườn xào chua...</h4>
+                            </a>
+                            <p class="lexend fs-15 color-title fw-300">Sơ chế / 3 người</p>
+                            <p class="price lexend text-orange fw-600 fs-20 mt-5 mb-0">82.000đ</p>
+                            <a href="#" class="add-to-cart position-absolute ">
+                                <img src="img/addtocart.png" alt="add-to-cart">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-item d-flex rounded-20 position-relative">
+                        <a class="d-block" href="singleProduct.html">
+                            <img src="img/hgvfjhn.png" class="img-fluid img-product w-100" alt="">
+                        </a>
+                        <div class="product-content pe-1">
+                            <a class="d-block" href="singleProduct.html">
+                                <h4 class="lexend fs-20 color-title mt-3">Cải bó xôi Đà Lạt</h4>
+                            </a>
+                            <p class="lexend fs-15 color-title fw-300">Tươi sống / 300g</p>
+                            <p class="price lexend text-orange fw-600 fs-20 mt-5 mb-0">25.000đ</p>
+                            <a href="#" class="add-to-cart position-absolute ">
+                                <img src="img/addtocart.png" alt="add-to-cart">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-item d-flex rounded-20 position-relative">
+                        <a class="d-block" href="singleProduct.html">
+                            <img src="img/vvv.png" class="img-fluid img-product w-100" alt="">
+                        </a>
+                        <div class="product-content pe-1">
+                            <a class="d-block" href="singleProduct.html">
+                                <h4 class="lexend fs-20 color-title mt-3">Xương ống</h4>
+                            </a>
+                            <p class="lexend fs-15 color-title fw-300">Tươi sống / 500g</p>
+                            <p class="price lexend text-orange fw-600 fs-20 mt-5 mb-0">58.000đ</p>
+                            <a href="#" class="add-to-cart position-absolute ">
+                                <img src="img/addtocart.png" alt="add-to-cart">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-item d-flex rounded-20 position-relative">
+                        <a class="d-block" href="singleProduct.html">
+                            <img src="img/ooo.png" class="img-fluid img-product w-100" alt="">
+                        </a>
+                        <div class="product-content pe-1">
+                            <a class="d-block" href="singleProduct.html">
+                                <h4 class="lexend fs-20 color-title mt-3">Vịt nấu chao</h4>
+                            </a>
+                            <p class="lexend fs-15 color-title fw-300">Sơ chế / 2 người</p>
+                            <p class="price lexend text-orange fw-600 fs-20 mt-5 mb-0">99.000đ</p>
+                            <a href="#" class="add-to-cart position-absolute ">
+                                <img src="img/addtocart.png" alt="add-to-cart">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blogs mt-5">
+        <div class="container">
+            <div class="row   mt-0 mb-5">
+                <div class="col-md-5 ps-0  col-lg-auto col-8 ">
+                    <h2 class="color-title lexend fw-bold fs-tablet-26 fs-32">Cùng FOODBOX vào bếp</h2>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <div class="line-orange w-100"></div>
+                </div>
+            </div>
+            <div class="d-grid grid-column-3 blogs-wraper">
+                <div class="blog-item ">
+                    <div class="blog-image">
+                        <a href="singleBlog.html">
+                            <img class="img-fluid w-100" src="img/dap-mem-thit 1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <a href="singleBlog.html">
+                            <h4 class="lexend fw-500 fs-20 color-title">15 phút cho món thịt bò bít tết ngon</h4>
+                        </a>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="d-flex gap-2">
+                                <div class="icon-date ">
+                                    <img src="img/date.png" alt="date">
+                                </div>
+                                <div class="date-text fs-14 pt-1">01/01/2022</div>
+                            </div>
+                            <div class="d-flex gap-3 ">
+                                <div class="d-flex gap-1">
+                                    <div class="icon-date">
+                                        <img src="img/akar-icons_eye.png" alt="">
+                                    </div>
+                                    <div class="date-text  fs-14 pt-1">15k</div>
+                                </div>
+                                <div class="d-flex gap-1 border-left">
+                                    <div class="icon-date">
+                                        <img src="img/tym.png" alt="">
+                                    </div>
+                                    <div class="date-text fs-14 pt-1 ">7655</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lexend fs-15 fw-300 mt-4 color-title">Bò bít tết là món ăn ngon, bổ dưỡng và được
+                            nhiều
+                            người ưa thích. FOODBOX sẽ hướng dẫn cả nhà một món bít tết...</p>
+                    </div>
+                </div>
+                <div class="blog-item ">
+                    <div class="blog-image">
+                        <a href="singleBlog.html">
+                            <img class="img-fluid w-100" src="img/dap-mem-thit 2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <a href="singleBlog.html">
+                            <h4 class="lexend fw-500 fs-20 color-title">Mỳ Ý hải sản sốt cà chua ngon tuyệt
+
+
+                            </h4>
+                        </a>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="d-flex gap-2">
+                                <div class="icon-date ">
+                                    <img src="img/date.png" alt="date">
+                                </div>
+                                <div class="date-text fs-14 pt-1">11/10/2021</div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="d-flex gap-1">
+                                    <div class="icon-date">
+                                        <img src="img/akar-icons_eye.png" alt="">
+                                    </div>
+                                    <div class="date-text  fs-14 pt-1">10k</div>
+                                </div>
+                                <div class="d-flex gap-1 border-left">
+                                    <div class="icon-date">
+                                        <img src="img/tym.png" alt="">
+                                    </div>
+                                    <div class="date-text fs-14 pt-1 ">5445</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lexend fs-15 fw-300 mt-4 color-title">Nếu bạn đang băn khoăn cho món gì để cả nhà vừa
+                            thấy ngon lại vừa lạ miệng thì “Mỳ Ý hải sản sốt cà chua” là một sự lựa chọn không thể tuyệt
+                            vời hơn.
+
+
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-item ">
+                    <div class="blog-image">
+                        <a href="singleBlog.html">
+                            <img class="img-fluid w-100" src="img/dap-mem-thit 1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <a href="singleBlog.html">
+
+                            <h4 class="lexend fw-500 fs-20 color-title">15 phút cho món thịt bò bít tết ngon</h4>
+                        </a>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="d-flex gap-2">
+                                <div class="icon-date ">
+                                    <img src="img/date.png" alt="date">
+                                </div>
+                                <div class="date-text fs-14 pt-1">01/01/2022</div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="d-flex gap-1">
+                                    <div class="icon-date">
+                                        <img src="img/akar-icons_eye.png" alt="">
+                                    </div>
+                                    <div class="date-text  fs-14 pt-1">15k</div>
+                                </div>
+                                <div class="d-flex gap-1 border-left">
+                                    <div class="icon-date">
+                                        <img src="img/tym.png" alt="">
+                                    </div>
+                                    <div class="date-text fs-14 pt-1 ">7655</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lexend fs-15 fw-300 mt-4 color-title">Bò bít tết là món ăn ngon, bổ dưỡng và được
+                            nhiều
+                            người ưa thích. FOODBOX sẽ hướng dẫn cả nhà một món bít tết...</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#"
+                class="btn rounded-20 lexend text-white btn-orange fs-18 fw-500 mx-auto d-block p-0 read-more">Xem tất
+                cả</a>
+
+        </div>
+    </section>
+    <section class="Promotion-information mt-4">
+        <div class="container">
+            <div class="row  p-0 mt-0 mb-5 ">
+                <div class="col-md-5 ps-0 col-sm-5 col-lg-auto col-8 ">
+                    <h2 class="color-title lexend fw-bold fs-tablet-26 fs-32">Tin tức khuyến mãi</h2>
+                </div>
+                <div class="col  d-flex align-items-center">
+                    <div class="line-orange w-100"></div>
+                </div>
+            </div>
+            <div class="d-grid grid-column-3 blogs-wraper">
+                <div class="blog-item ">
+                    <div class="blog-image">
+                        <a href="singleBlog.html">
+                            <img class="img-fluid w-100" src="img/dap-mem-thit 1 (2).png" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <a href="singleBlog.html">
+                            <h4 class="lexend fw-500 fs-20 color-title">Cùng Foodbox tích sao ngay - Tặng quà liền tay
+
+                            </h4>
+                        </a>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="d-flex gap-2">
+                                <div class="icon-date ">
+                                    <img src="img/date.png" alt="date">
+                                </div>
+                                <div class="date-text fs-14 pt-1">09/10/2022</div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="d-flex gap-1">
+                                    <div class="icon-date">
+                                        <img src="img/akar-icons_eye.png" alt="">
+                                    </div>
+                                    <div class="date-text  fs-14 pt-1">9k</div>
+                                </div>
+                                <div class="d-flex gap-1 border-left">
+                                    <div class="icon-date">
+                                        <img src="img/tym.png" alt="">
+                                    </div>
+                                    <div class="date-text fs-14 pt-1 ">4000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lexend fs-15 fw-300 mt-4 color-title">Từ ngày 10/10/2022 đến 28/12/2022, FOODBOX mang
+                            đến bạn chương trình "Tích sao tặng quà" với những phần thưởng vô cùng hấp dẫn nhằm tri ân
+                            khách hàng...</p>
+                    </div>
+                </div>
+                <div class="blog-item ">
+                    <div class="blog-image">
+                        <a href="singleBlog.html">
+                            <img class="img-fluid w-100" src="img/dap-mem-thit 1 (3).png" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <a href="singleBlog.html">
+                            <h4 class="lexend fw-500 fs-20 color-title">Khao món ngon giá hời - Tiết kiệm tới 50%
+
+                            </h4>
+                        </a>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="d-flex gap-2">
+                                <div class="icon-date ">
+                                    <img src="img/date.png" alt="date">
+                                </div>
+                                <div class="date-text fs-14 pt-1">01/10/2022</div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="d-flex gap-1">
+                                    <div class="icon-date">
+                                        <img src="img/akar-icons_eye.png" alt="">
+                                    </div>
+                                    <div class="date-text  fs-14 pt-1">15k</div>
+                                </div>
+                                <div class="d-flex gap-1 border-left">
+                                    <div class="icon-date">
+                                        <img src="img/tym.png" alt="">
+                                    </div>
+                                    <div class="date-text fs-14 pt-1 ">7655</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lexend fs-15 fw-300 mt-4 color-title">Chào tháng 10, FOODBOX khao bạn đại tiệc món
+                            ngon giá hời với thật nhiều deal hot và cơ hội nhận ưu đãi giảm giá đến 50%</p>
+                    </div>
+                </div>
+                <div class="blog-item ">
+                    <div class="blog-image">
+                        <a href="singleBlog.html">
+                            <img class="img-fluid w-100" src="img/dap-mem-thit 1 (4).png" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <a href="singleBlog.html">
+                            <h4 class="lexend fw-500 fs-20 color-title">Hè vui rực rỡ - FOODBOX sale sốc hết cỡ
+
+                            </h4>
+                        </a>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="d-flex gap-2">
+                                <div class="icon-date ">
+                                    <img src="img/date.png" alt="date">
+                                </div>
+                                <div class="date-text fs-14 pt-1">15/08/2022</div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="d-flex gap-1">
+                                    <div class="icon-date">
+                                        <img src="img/akar-icons_eye.png" alt="">
+                                    </div>
+                                    <div class="date-text  fs-14 pt-1">18k</div>
+                                </div>
+                                <div class="d-flex gap-1 border-left">
+                                    <div class="icon-date">
+                                        <img src="img/tym.png" alt="">
+                                    </div>
+                                    <div class="date-text fs-14 pt-1 ">9264</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lexend fs-15 fw-300 mt-4 color-title">Mức giảm giá ưu đãi lên đến 50% cho hàng loạt
+                            các sản phẩm đa dạng từ thủy hải sản đến hoa quả </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#"
+                class="btn rounded-20 lexend text-white btn-orange fs-18 fw-500 mx-auto d-block p-0 read-more">Xem tất
+                cả</a>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <!-- END FOOTER -->
+
+
+    <!-- Bootstrap CDN js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- END Bootstrap CDN js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

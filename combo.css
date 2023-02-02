@@ -1,0 +1,13 @@
+.combo{
+    background-image:url(imgPD/Rectangle\ 3\ \(1\).jpg)!important;
+}
+@media(max-width:992px){
+    .combo{
+        background-image: url(imgPD/Rectangle\ 3.jpg);
+    }
+}
+@media(max-wid5th:767px){
+    .combo{
+        background-image: url(imgPD/Rectangle\ 318.jpg);
+    }
+}

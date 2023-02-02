@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=M+PLUS+Rounded+1c:wght@800&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Mukta:wght@500&family=Nunito+Sans&family=Open+Sans&family=Oswald&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300&display=swap');
+
+.login input::placeholder {
+    color: #F36905;
+}
+
+.jak {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+.login .text-grey {
+    color:
+        #7B7575 !important;
+    cursor: pointer;
+
+}
+
+.login .col-12.border-1 {
+    border: 1px solid #E5E5E5 !important;
+}
+
+.login .form-container {
+    max-width: 410px;
+    margin: auto;
+}
+
+.login .form-container input:not(input[type=checkbox]) {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 25px;
+    border: 1px solid #D0D0D0;
+    outline: none;
+    padding: 10px 30px;
+}
+
+.login {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.login button {
+    margin-top: 27px;
+}
+
+.login input[type=password]+.d-flex {
+    margin-top: 25px;
+}
+
+.login p span {
+    width: 95px;
+    display: inline-block;
+    border-top: 1px solid #b4b4b4;
+}
+
+.login .or-color {
+    color: #afafaf;
+    gap: 15px;
+}
+
+
+
+.login a.facebook {
+    background: #496DEC !important;
+
+}
+
+@media(min-width:1100px) {
+    .login .nowrap {
+        white-space: nowrap;
+
+    }
+}
+
+.login .col-6 {
+    padding-right: 30px !important;
+}
+
+@media(max-width:992px) and (min-width:767.999px) {
+    .login .col-6 {
+        padding-right: 30px !important;
+    }
+
+    .login .col-6 img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .login h1 {
+        font-size: 20px
+    }
+
+    .login .col-12 {
+
+        padding: 30px 33px !important;
+    }
+
+    .login .nowrap {
+
+        font-size: 12px;
+
+    }
+
+    .login input {
+        font-size: 14px;
+        font-weight: 300
+    }
+
+    .login button {
+        font-size: 16px;
+    }
+
+    .login .facebook {
+        font-size: 16px;
+    }
+
+    .fs-mobile-12 {
+        font-size: 12px !important;
+    }
+
+    .fs-mobile-10 {
+        font-size: 10px !important
+    }
+
+    header {
+        border: 1px solid #3737374d;
+    }
+
+}
+
+
+
+
+/*admin*/
+.header-admin {
+    height: 90px;
+    border-bottom: 1px solid #CACACA;
+}
+
+.admin .logo-brand img {
+    width: 57px
+}
+
+.admin .avatar img {
+    width: 118px;
+    height: 118px;
+}
+
+.gap-78 {
+    gap: 78px;
+}
+
+.gap-65 {
+    gap: 65px;
+}
+
+.admin-info+ul li a {
+
+    border-bottom: 1px solid #fff;
+    padding: 20px 45px;
+}
+
+.admin-info+ul li:first-child a {
+    border-top: 1px solid #fff;
+}
+
+.fs-21 {
+    font-size: 21px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.grid-column-4 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.text-green-new {
+    color: #22C55E;
+}
+
+.text-pink {
+    color: #EF4444;
+}
+
+.tab-content .grid-item {
+    border: 1px solid #E4E4E7;
+    border-radius: 10px;
+    padding: 11px 9px;
+    padding-left: 6px;
+}
+
+.tab-content .search-content {
+    gap: 35px;
+    margin-top: 32px;
+}
+
+.tab-content .search-content input {
+    height: 53px;
+    width: 315px;
+    border-radius: 30px;
+    border: 1px solid #E5E5E5 !important;
+}
+
+.tab-content .search-content button {
+    height: 45px;
+    width: 83px;
+}
+
+.chart-img {
+    margin-top: 39px;
+}
+
+.tabs-nav li.active a {
+    background-color: #fff;
+    color: #F36905 !important;
+}
+
+.tab-content-same form {
+    gap: 35px;
+}
+
+.tab-content-same form input {
+    border: 1px solid #E5E5E5;
+    width: 315px;
+    height: 53px;
+    padding: 16px 20px;
+
+}
+
+.tab-content-same form button {
+    height: 45px;
+    width: 83px;
+}
+
+.tab-content-same .badge.position-absolute {
+    top: -11px;
+    right: -8px;
+}
+
+.tab-content-same .btn-filter>button {
+    border: 1px solid #DDE2E4 !important;
+    border-radius: 6px !important;
+    height: 32px;
+    width: 85px;
+}
+
+.tab-content-same form~.btn-filter img {
+    padding-right: 7px;
+}
+
+.tab-content-same form+.btn-filter {
+    margin-right: 8px;
+}
+
+.tab-content-same th.col.fw-600 {
+    font-weight: 600 !important;
+
+}
+
+.tab-content-same th {
+    color: #84919A;
+}
+
+.tab-content-same .checkbox {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    top: 3px;
+}
+
+.tab-content-same .checkbox__input {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.tab-content-same .checkbox__inner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #626262;
+    background: transparent no-repeat center;
+}
+
+.tab-content-same .checkbox__input:checked+.checkbox__inner {
+    border-color: #52C6C4;
+    background-color: #52C6C4;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 14px 10px;
+}
+
+.tab-content-same .called {
+    width: 83px;
+    height: 24px;
+    border-radius: 6px;
+    padding: 0 8px;
+    background-color: #EBFFF1;
+    color: #119C2B;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#tab2 .called {
+    width: 116px;
+
+}
+
+.admin .col-2 {
+    background: #F28705;
+
+}
+
+#tab1 .search-content input {
+    padding: 0 20px;
+}
+
+#tab1 {
+    padding-left: 30px;
+}
+
+#tab2 {
+    padding-left: 45px;
+    padding-right: 15px;
+}
+
+#tab4 {
+    padding-left: 45px;
+}
+
+#tab5 {
+    padding-left: 35px;
+}
+
+.tab-content-same .called img {
+    padding-right: 5px;
+}
+
+.tab-content-same tbody * {
+    font-size: 14px;
+}
+
+.tab-content-same td {
+    color: #252C32;
+}
+
+
+
+
+
+
+.pagination {
+    gap: 10px;
+    margin-top: 54px;
+}
+
+.page-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% !important;
+    line-height: 30px;
+}
+
+.page-link:first-child {
+    background-color: transparent;
+
+}
+
+.page-item:nth-child(3) .page-link {
+    background: #EDEFEB !important;
+
+}
+
+.table>:not(caption)>*>* {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+#tab3 .add-to-cart {
+    height: 32px;
+    margin-left: 17px;
+
+}
+
+#tab3 {
+    padding-left: 45px;
+}
+
+#tab4 .add-to-cart {
+    height: 32px;
+    margin-left: 17px;
+
+}
+
+#tab6 .add-to-cart {
+    height: 32px;
+    margin-left: 17px;
+    margin-right: 35px;
+
+}
+
+/* #tab3 tbody td {
+    font-weight: 600 !important;
+} */
+
+
+#tab6 th {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+#tab6 tbody .checkbox {
+    color: #000;
+    font-weight: 600;
+
+}
+
+#tab6 .checkbox div {
+    padding-left: 23px;
+    color: #667085;
+}
+
+#tab6 thead th,
+#tab6 tbody td {
+    font-weight: 500;
+    color: #667085;
+}
+
+#tab6 tbody .checkbox__inner {
+    position: relative;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    border-color: #D0D5DD;
+    border-radius: 6px;
+}
+
+#tab6 thead .checkbox__inner {
+    position: relative;
+    top: 5px;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+    border-color: #D0D5DD;
+}
+
+#tab6 thead {
+    background-color: #F9FAFB !important;
+}

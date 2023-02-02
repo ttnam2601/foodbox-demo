@@ -1,0 +1,372 @@
+.text-lightYellow {
+    color:
+        #F2B705;
+}
+
+.account {
+    padding-top: 35px;
+    padding-bottom: 75px;
+
+}
+
+.account .container {
+    max-width: 981px !important;
+}
+
+.side-bar {
+    -webkit-box-shadow: 0px 2px 20px 0px #00000025;
+    box-shadow: 0px 2px 20px 0px #00000025;
+    border-radius: 10px;
+    padding-top: 22px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    border: 1px solid #B4B4B4;
+}
+
+.form-wrap {
+    max-width: 635px;
+    border: 1px solid #B4B4B4;
+    padding: 40px 64px;
+    border-radius: 15px;
+    padding-right: 150px;
+}
+
+.account .col-md-3 {
+    padding-right: 30px !important;
+}
+
+#form-account input {
+    max-width: 261px;
+    height: 40px;
+    padding: 0 14px;
+    border: 1px solid #F28705;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+#form-account label {
+    cursor: pointer;
+}
+
+#form-account>div {
+    margin-top: 25px;
+}
+
+#form-account .position-absolute {
+    right: -90px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.radio-contaner {
+    margin-left: 90px;
+}
+
+#form-account input[type=radio] {
+    height: 14px;
+    width: 14px;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0;
+    background: #7E7A78;
+    border: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+#form-account input[type=radio]:checked {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #F28705;
+    background-color: #F28705;
+    background-clip: content-box;
+    padding: 5px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.account select {
+    width: 56px;
+    height: 40px;
+    border: 1px solid #F28705 !important;
+    border-radius: 15px;
+    outline: none;
+    font-size: 13px;
+    padding-left: 5px;
+
+}
+
+.account .gap-22 {
+    gap: 22px;
+    ;
+}
+
+.account .birthday p {
+    line-height: 40px;
+}
+
+.account .birthday-container {
+    margin-left: 77px;
+}
+
+input:focus {
+    outline: none;
+    ;
+}
+
+#year {
+    width: 72px;
+}
+
+.account .location-container {
+    min-width: 300px;
+    min-width: 69%;
+    margin-left: 104px;
+
+}
+
+.account p {
+    line-height: 40px;
+}
+
+.account .checkout {
+    gap: 25px;
+}
+
+.account .checkout-container {
+    gap: 33px;
+}
+
+.form-wrap button[type=submit] {
+    height: 45px;
+    width: 120px;
+    margin-top: 50px;
+}
+
+@media(max-width:992px) {
+    .account h1 {
+        font-size: 24px;
+    }
+
+    .radio-contaner {
+        margin-left: 55px;
+    }
+
+    #form-account input {
+        max-width: 234px;
+    }
+
+    .birthday-container {
+        margin-left: 40px !important;
+    }
+
+    .account .form-wrap {
+        padding: 0 30px;
+        padding-top: 35px;
+        padding-bottom: 45px;
+        padding-right: 95px;
+    }
+
+    .account .avatar img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .account .userName {
+        font-size: 15px;
+    }
+
+    .account .side-bar {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .account .col-md-3 {
+        padding-right: 0 !important;
+    }
+
+    .account .col-md-9.p-0 {
+        padding-left: 30px !important;
+    }
+
+    .account .form-wrap p {
+        font-size: 14px;
+    }
+
+    .account input {
+        font-size: 13px !important;
+    }
+
+    .account label.position-absolute {
+        font-size: 13px;
+    }
+
+    #form-account .position-absolute {
+        right: -75px;
+    }
+
+    .birthday {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+    }
+
+    .sex {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+    }
+
+    .radio-contaner {
+        margin-right: 57px;
+    }
+
+    .birthday-container {
+        margin-right: 8px;
+    }
+
+    .checkout {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .account .checkout-container {
+        margin-right: -65px;
+    }
+
+}
+
+@media(max-width:767px) {
+    .account .avatar img {
+        width: 66px;
+        height: 66px;
+    }
+
+    .account .side-bar {
+        padding-left: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .account h1 {
+        font-size: 20px;
+    }
+
+    .account .side-bar>div:first-child {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .account .nav-sidebar a {
+        font-size: 14px;
+
+    }
+
+    .account .form-wrap p {
+        font-size: 12px;
+    }
+
+    .account .nav-sidebar {
+        gap: 5px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .account .form-wrap {
+        padding: 21px 8px;
+        padding-right: 35px;
+    }
+
+    .account .col-md-9.p-0 {
+        padding-left: 0 !important;
+    }
+
+    #form-account input {
+        height: 33px;
+        max-width: 203px;
+    }
+
+    .account p {
+        line-height: 33px;
+    }
+
+    .checkout-container img {
+        width: 28px;
+    }
+
+    .checkout-container img:nth-child(3) {
+        -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+        transform: scale(1.7);
+    }
+
+    .account .checkout-container {
+        gap: 20px;
+    }
+
+    header {
+        border: 1px solid #3737374d;
+    }
+
+    .breakcumb-item {
+        font-size: 12px;
+    }
+
+    .birthday-container {
+        margin-left: 41px !important;
+    }
+
+    .radio-contaner {
+        margin: 0;
+        position: relative;
+        right: 31px;
+
+    }
+
+    .birthday p {
+        white-space: nowrap;
+    }
+
+    .account select {
+        height: 28px;
+        width: 47px;
+    }
+
+    #year {
+
+        width: 60px;
+    }
+
+
+
+    #form-account .position-absolute {
+        right: -21px;
+    }
+
+    .birthday {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+    }
+
+    .account .checkout-container {
+        margin-right: -24px;
+    }
+
+
+
+}

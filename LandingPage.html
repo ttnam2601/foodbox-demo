@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODBOX</title>
+    <!-- Bootstrap CDN css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- END Bootstrap CDN css-->
+
+    <!--IMPORT FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!-- END IMPORT  FOOTER -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="LandingPage.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="d-flex">
+        <div class="container my-auto">
+            <div class="row ">
+
+                <!-- logo-brand -->
+                <div class="col-4 ">
+
+                    <div class="d-flex">
+                        <button class="border-0 navbar-toggle">
+                            <img class=" d-md-none " src="img/Group 438.png" alt="toggle">
+                        </button>
+                        <div class="overlay-mobile d-md-none"></div>
+                        <a href="LandingPage.html"
+                            class="logo-brand text-decoration-none text-orange d-flex align-items-center">
+                            <img class="logo-image d-none d-md-block" src="img/Group 315.png" alt="Foodbox">
+
+                            <span class="logo-text text-uppercase fw-600 ms-md-0 ms-3">Foodbox</span>
+                        </a>
+                    </div>
+                    <!-- nav mobile -->
+                    <nav class="nav-mobile bg-orange d-md-none ">
+                        <button class="close-nav border-0">
+                            <img src="img/Group 444.png" alt="close">
+                        </button>
+                        <ul class="navbar-mobile list-unstyled ">
+                            <li class="nav-item">
+                                <a href="index.html" target="_blank" class="nav-link text-white ">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" target="_blank" class="nav-link text-white">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" target="_blank" class="nav-link text-white">Về FoodBox</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- end nav mobile -->
+                </div>
+                <!-- end logo-brand -->
+                <!-- navbar tablet and pc -->
+                <div class="col-8">
+                    <nav class="nav w-100 d-md-block  d-none">
+                        <ul class="navbar list-unstyled m-0">
+                            <li class="nav-item d-">
+                                <a href="index.html" target="_blank"
+                                    class="nav-link text-orange fs-30 fw-600 lexend">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" target="_blank" class="nav-link text-orange fs-30 fw-600 lexend">Tin
+                                    tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" target="_blank" class="nav-link text-orange fs-30 fw-600 lexend">Về
+                                    FoodBox</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- nav mobile -->
+                    <div class="row  my-auto nav-mobile-right  position-relative d-md-none me-0 ">
+                        <div class="col p-0 d-md-none">
+                            <a
+                                class="btn  ms-auto border-0 p-0 gap-10 d-flex justify-content-center align-items-center  py-1">
+                                <img src="img/Vector (1).png" alt="search">
+                            </a>
+                        </div>
+                        <div class="col p-0">
+                            <a href="#"
+                                class="btn  ms-auto border-0 p-0 gap-10 d-flex justify-content-center align-items-center  py-1">
+                                <div class="user-img ">
+                                    <img class="img-fluid" src="img/Group 2810.png" alt="User">
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="col p-0">
+                            <a href="#"
+                                class="btn  ms-auto border-0 p-0 gap-10  d-flex justify-content-center align-items-center  py-1">
+                                <div class="with-list-img ">
+                                    <img class="img-fluid" src="img/Vector (2).png" alt="with-list">
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="col p-0">
+                            <a href="#"
+                                class="btn  ms-auto border-0 p-0 gap-10  d-flex justify-content-center align-items-center  py-1">
+                                <div class="cart-img ">
+                                    <img class="img-fluid" src="img/Vector (3).png" alt="cart">
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--end navbar tablet and pc -->
+
+
+
+
+
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <section class="banner d-md-block d-none">
+
+    </section>
+    <section class="instructions mt-5 pt-md-0 pt-4">
+        <div class="container">
+            <h2 class="text-dark lexend fw-bold fs-20 text-center">CÁC BƯỚC ĐỂ KHIẾN VÀO BẾP KHÔNG CÒN LÀ ÁC MỘNG</h2>
+            <div class="d-grid mt-4">
+                <div class="instruction-item ">
+                    <div class="instruction-image d-block mx-auto ">
+                        <img class="img-fluid d-block mx-auto" src="imgLP/Step1.gif" alt="instruction">
+                    </div>
+                    <div class="instruction-content mt-lg-4 mt-3">
+                        <h3 class="lexend text-dark fw-500 text-center fs-32 text-center">Bước 1</h3>
+                        <p class="lexend text-dark fs-20 text-center mx-auto">Chọn món bạn yêu thích hoặc mua các gói
+                            tuần,
+                            gói
+                            tháng</p>
+                    </div>
+                </div>
+
+                <div class="instruction-item text-center">
+                    <div class="instruction-image d-block mx-auto">
+                        <img class="img-fluid" src="imgLP/step2.gif" alt="instruction">
+                    </div>
+                    <div class="instruction-content mt-lg-4 mt-3">
+                        <h3 class="lexend text-dark fw-500 text-center fs-32">Bước 2</h3>
+                        <p class="lexend text-dark fs-20 text-center mx-auto">FOODBOX sơ chế món bạn đặt, mang tới tận
+                            trước
+                            thềm nhà bạn</p>
+                    </div>
+                </div>
+                <div class="instruction-item text-center">
+                    <div class="instruction-image d-block mx-auto">
+                        <img class="img-fluid" src="imgLP/step3.gif " alt="instruction">
+                    </div>
+                    <div class="instruction-content mt-lg-4 mt-3">
+                        <h3 class="lexend text-dark fw-500 text-center fs-32">Bước 3</h3>
+                        <p class="lexend text-dark fs-20 text-center mx-auto">Quét mã QR có sẵn trên từng món ăn để được
+                            đưa
+                            tới trang hướng dẫn làm theo hướng dẫn</p>
+                    </div>
+                </div>
+                <div class="instruction-item text-center">
+                    <div class="instruction-image d-block mx-auto">
+                        <img class="img-fluid" src="imgLP/Step4.gif" alt="instruction">
+                    </div>
+                    <div class="instruction-content mt-lg-4 mt-3">
+                        <h3 class="lexend text-dark fw-500 text-center fs-32">Bước 4</h3>
+                        <p class="lexend text-dark fs-20 text-center  mx-auto"> Nấu ăn, thưởng thức và lặp lại các bước
+                            trên
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="contact d-flex align-items-center">
+        <div class="container">
+            <div class="box-form bg-white">
+                <h2 class="text-orange lexend fs-32 fw-bold text-center">ĂN ĐI - LO CHI THỜI GIAN</h2>
+                <h3 class="lexend text-dark fs-24 text-center">Nấu ăn ngon - Không lo thời gian</h3>
+                <p class="text-dark lexend fw-light fs-20 text-center">Để lại số điện thoại để nhận tư vấn thêm</p>
+                <form action="#" method="post">
+                    <div class="form-input d-flex justify-content-center">
+                        <input class="lexend text-orange required  rounded-20" type="text" id="name" name="user"
+                            required placeholder="Họ và tên">
+                        <input class="lexend text-orange required rounded-20" type="tel" name="phone" required
+                            id="phone" placeholder="Số điện thoại">
+                    </div>
+                    <button class="btn btn-orange fw-500 text-white lexend fs-20 mx-auto d-block" type="submit"
+                        id="submit">Nhận tư vấn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- reason -->
+    <section class="reason mt-lg-3 mt-md-5 mt-4">
+        <div class="container">
+            <h2 class="text-dark lexend fs-32 text-center fw-bold">TẠI SAO BẠN NÊN CHỌN FOODBOX?</h2>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex">
+                        <div class="reason image">
+                            <img src="imgLP/Rectangle 5 (4).png" alt="time">
+                        </div>
+                        <div class="reason-content">
+                            <h3 class="text-orange fs-32 fw-500 lexend">Tiết kiệm thời gian</h3>
+                            <p class="lexend fw-300 fs-22">FOODBOX là giải pháp tiết kiệm thời gian cho bạn, có đủ tất
+                                cả
+                                những thực phẩm tươi sống như thịt hoặc cá rau tại một trang duy nhất.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex">
+                        <div class="reason image">
+                            <img src="imgLP/Rectangle 5 (5).png" alt="time">
+                        </div>
+                        <div class="reason-content">
+                            <h3 class="text-orange fs-32 fw-500 lexend">Tiết kiệm thời gian</h3>
+                            <p class="lexend fw-300 fs-22">Nói không với đồ đông lạnh, nguồn nguyên liệu rõ ràng, nguồn
+                                gốc xuất xứ nhà phân phối rõ ràng. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex">
+                        <div class="reason image">
+                            <img src="imgLP/Rectangle 5 (6).png" alt="time">
+                        </div>
+                        <div class="reason-content">
+                            <h3 class="text-orange fs-32 fw-500 lexend">Tươi sống - nguyên liệu sạch</h3>
+                            <p class="lexend fw-300 fs-22">Sản phẩm FOODBOX luôn lắng nghe và thấu hiểu nỗi lo của khách
+                                hàng, vì vậy những sản phẩm FOODBOX hoàn toàn được sơ chế sẵn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--end reason -->
+
+    <!-- food quality -->
+
+    <section class=" pt-4 section-foodQuanlity mt-md-5 mb-5">
+        <div class="container">
+
+
+            <h2 class="text-dark lexend fw-bold fs-tablet-26 fs-32 text-center mb-md-5 ">Thời gian giảm - Khẩu vị tăng
+            </h2>
+
+
+
+            <div class="foodQuanlity d-grid mt-1">
+
+                <div class="product-item d-flex flex-column">
+                    <div class="product-image">
+                        <img class="d-block w-100" src="img/new-img2.png" alt="product">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title text-center">Ăn đi - lo chi thời gian</h3>
+                        <ul class="list-unstyled">
+                            <li class="mt-md-3 mt-2">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3  lexend fs-18 fw-300">Dành cho gia đình 3-4 người</span>
+                            </li>
+                            <li class="mt-md-3 ">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3 lexend fs-18 color-title fw-300">Đủ 3 bữa ăn trong ngày</span>
+                            </li>
+                            <li class="mt-md-3 ">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3 lexend fs-18 color-title fw-300">Đảm bảo dinh dưỡng.</span>
+                            </li>
+                            <li class="mt-md-3 ">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3 lexend fs-18 color-title fw-300">Tiết kiệm 25% so với mua
+                                    lẻ.</span>
+                            </li>
+                            <li class="mt-md-3 ">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3 lexend fs-18 color-title fw-300">Bữa ăn được cá nhân
+                                    hóa.</span>
+                            </li>
+
+                        </ul>
+                        <del class="lexend d-block text-center fs-20" style="color:#b4b4b4;">4.900.000</del>
+                        <h5 class="price fw-600 text-orange mb-md-0 mb-1 fs-30 text-center">4.999.999</h5>
+                    </div>
+                    <a href="#" class="btn btn-orange lexend buy-now text-white fs-26 w-100 mt-auto">
+
+                        Đặt hàng ngay
+                    </a>
+                </div>
+
+                <div class="product-item d-flex flex-column">
+                    <div class="product-image">
+                        <img class="d-block w-100" src="img/new-img1.png" alt="product">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title text-center">Tối nay bạn ăn gì ?</h3>
+                        <ul class="list-unstyled mt-69">
+                            <li class="mt-md-3 mt-2">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3  lexend fs-18 fw-300">Dành cho gia đình 3-4 người</span>
+                            </li>
+                            <li class="mt-md-3 ">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3 lexend fs-18 color-title fw-300">Đủ 3 bữa ăn trong ngày</span>
+                            </li>
+                            <li class="mt-md-3 ">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3 lexend fs-18 color-title fw-300">Đảm bảo dinh dưỡng.</span>
+                            </li>
+                            <li class="mt-md-3 ">
+                                <span class="icon-list">
+                                    <img src="img/check.png" alt="check">
+                                </span>
+                                <span class="pt-1 ms-lg-3 lexend fs-18 color-title fw-300">Tiết kiệm 25% so với mua
+                                    lẻ.</span>
+                            </li>
+
+
+                        </ul>
+                        <del class="lexend d-block text-center fs-20" style="color:#b4b4b4;">4.900.000</del>
+                        <h5 class="price fw-600 text-orange fw-500 fs-30 mb-md-0 mb-1 fs-22 text-center">4.999.999</h5>
+                    </div>
+                    <a href="#" class="btn btn-orange lexend buy-now text-white fs-26 w-100 mt-auto">
+
+                        Đặt hàng ngay
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="btn btn-orange lexend fs-20 text-white mx-auto d-block mw-270 mt-md-5 mt-4">Tạo gói của
+                riêng
+                bạn</a>
+        </div>
+    </section>
+    <!-- food quality -->
+
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- END FOOTER -->
+
+    <!-- Bootstrap CDN js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- END Bootstrap CDN js -->
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--END jquery CDN -->
+    <script src="script.js"></script>
+</body>
+
+</html>

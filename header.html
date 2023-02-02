@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <!-- Bootstrap CDN css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- END Bootstrap CDN css-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- header-top -->
+        <div class="header-top d-flex bg-white">
+            <div class="container my-auto">
+                <div class="row ">
+
+                    <!-- logo-brand -->
+                    <div class="col-md-3 ">
+
+                        <div class="d-flex">
+                            <button class="border-0 navbar-toggle">
+                                <img class=" d-md-none " src="img/Group 438.png" alt="toggle">
+                            </button>
+                            <div class="overlay-mobile d-md-none"></div>
+                            <a href="index.html"
+                                class="logo-brand text-decoration-none text-orange d-flex align-items-center">
+                                <img class="logo-image d-none d-md-block" src="img/Group 315.png" alt="Foodbox">
+
+                                <span class="logo-text text-uppercase fw-600 ms-md-0 ms-3">Foodbox</span>
+                            </a>
+                        </div>
+                        <!-- nav mobile -->
+                        <nav class="nav-mobile bg-orange d-md-none ">
+                            <button class="close-nav border-0">
+                                <img src="img/Group 444.png" alt="close">
+                            </button>
+                            <ul class="navbar-mobile list-unstyled ">
+                                <li class="nav-item">
+                                    <a href="LandingPage.html" class="nav-link text-white">Về FoodBox</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="Product.html" class="nav-link text-white">Sản Phẩm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="combo.html" class="nav-link text-white">Combo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link text-white">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link text-white">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tel:0911290476" class="nav-link text-white">Hotline: 1800.6969.8888</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- end nav mobile -->
+                    </div>
+                    <!-- end logo-brand -->
+
+                    <!-- form search -->
+                    <div class="col-md-4 d-flex  form ">
+                        <form class="form-search-header w-100 w-md-100 my-auto " id="formSeach" method="post">
+                            <label class="d-block mw-350 position-relative" for="eating">
+                                <input class="d-block w-100 py-1 d-lg-block d-none rounded-30 px-3 text-orange fs-12"
+                                    type="text" name="eating" id="eating" placeholder="Tìm kiếm món ăn ưa thích..."
+                                    required>
+                                <input class="d-lg-none d-none d-md-block rounded-30 ps-4" type="text" name="eating-2"
+                                    id="food-search" placeholder="Tìm kiếm..." required>
+
+                                <button type="submit"
+                                    class="position-absolute btn-orange btn border-0 top-0 d-md-block d-none pt-1  ps-sm-2 ">
+                                    <img src="img/Vector (1).png" alt="search" class=" icon-search">
+                                </button>
+
+                            </label>
+
+                            <input class="d-none" type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <!-- end form search -->
+
+                    <!-- Toolbar -->
+                    <div class="col-md-5 col-auto Toolbar d-flex justify-content-lg-end ml-auto  pe-0">
+                        <div class="row  my-auto   position-relative  gap-md-0 gap-4 ">
+                            <div class="col p-0 d-md-none">
+                                <a class="btn  d-md-none p-0 rounded-30  py-1 border-0 ">
+                                    <img src="img/search-2.png" alt="search">
+                                </a>
+                            </div>
+                            <div class="col p-0">
+                                <a href="login.html" target="_blank"
+                                    class="btn ms-auto border-0 p-0 gap-10  d-flex justify-content-center align-items-center rounded-30 py-1">
+                                    <div class="user-img ">
+                                        <img class="w-19" src="img/Group 2810.png" alt="User">
+                                    </div>
+                                    <!-- <span class="user-text text-white fs-12 d-md-block d-none">Tài khoản</span> -->
+                                </a>
+                            </div>
+                            <div class="col p-0">
+                                <a href="account.html" target="_blank"
+                                    class="btn  ms-auto border-0 p-0 gap-10  d-flex justify-content-center align-items-center rounded-30 py-1">
+                                    <div class="with-list-img ">
+                                        <img class="w-19" src="img/Vector (2).png" alt="with-list">
+                                    </div>
+                                    <!-- <span class="with-list-text text-white fs-12 d-md-block d-none">Yêu thích</span> -->
+                                </a>
+                            </div>
+                            <div class="col p-0">
+                                <a href="cart.html" target="_blank"
+                                    class="btn  ms-auto border-0 p-0 gap-10  d-flex justify-content-center align-items-center rounded-30 py-1">
+                                    <div class="cart-img ">
+                                        <img class="w-19" src="img/Vector (3).png" alt="cart">
+                                    </div>
+                                    <!-- <span class="cart-text text-white fs-12 d-md-block d-none">Giỏ hàng</span> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Toolbar -->
+
+                </div>
+            </div>
+        </div>
+        <!-- end header-top -->
+        <!-- header-bottom-main-nav -->
+        <div class="header-bottom-bar bg-orange d-md-block d-none">
+            <div class="container ">
+                <nav class="nav justify-content-center ">
+                    <ul class="navbar list-unstyled justify-content-between w-100 my-auto">
+                        <li class="nav-item">
+                            <a href="LandingPage.html" class="nav-link fs-18 text-white lexend">Về FoodBox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Product.html" class="nav-link fs-18 text-white lexend">Sản Phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="combo.html" class="nav-link fs-18 text-white lexend">Combo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link fs-18 text-white lexend">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link fs-18 text-white lexend">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tel:0911290476" class="nav-link fs-18 text-white lexend">Hotline:
+                                1800.6969.8888</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+        <!-- end header-bottom-main-nav -->
+    </header>
+
+    <!-- END HEADER -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- END Bootstrap CDN js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

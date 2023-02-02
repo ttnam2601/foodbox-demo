@@ -1,0 +1,108 @@
+.register img {
+    height: 681px;
+    border-radius: 30px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.register input::placeholder {
+    color: #F36905;
+}
+
+.register .text-grey {
+    color:
+        #7B7575 !important;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.register .col-12.border-1 {
+    border: 1px solid #E5E5E5 !important;
+}
+
+.register .form-container {
+    max-width: 410px;
+    margin: auto;
+}
+
+.register .form-container input:not(input[type=checkbox]) {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 25px;
+    border: 1px solid #D0D0D0;
+    outline: none;
+    padding: 10px 30px;
+}
+
+.register {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+
+.register .form-container+P a {
+    color:
+        #FFA45D;
+    margin-top: 25px
+}
+
+.register .fs-15 {
+    font-size: 15px;
+}
+
+.register .row {
+    gap: 30px;
+}
+
+.register .row>div {
+    padding: 0;
+}
+
+@media(max-width:992px) {
+    .register .form-container {
+        max-width: 270px;
+    }
+
+
+
+    .register img {
+        height: 536px;
+    }
+
+    .register h1 {
+        font-size: 20px;
+    }
+
+    .register .form-container input:not(input[type=checkbox]) {
+        height: 40px;
+        font-size: 14px;
+        margin-top: 15px;
+        font-weight: 300;
+    }
+
+    .register button {
+        font-size: 16px;
+        margin-top: 45px;
+    }
+}
+
+@media(max-width:767px) {
+    .register .col-12 {
+
+        padding: 30px 33px !important;
+    }
+
+    .register .form-container {
+        max-width: 100%;
+    }
+
+    .register form {
+        width: 100%;
+    }
+
+    header {
+        border: 1px solid #3737374d;
+    }
+}

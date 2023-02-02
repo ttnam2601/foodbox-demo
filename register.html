@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <!-- Bootstrap CDN css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- END Bootstrap CDN css-->
+
+    <!--IMPORT HEADER AND FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!-- END IMPORT HEADER AND FOOTER -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- END HEADER -->
+
+    <section class="register">
+        <div class="container">
+            <div class="row">
+                <div class="col d-md-block d-none">
+                    <img class="img-fluid" src="img/Rectangle 7.png" alt="banner">
+                </div>
+                <div class="col-md-6 col-12 border-1 rounded-30 d-flex">
+                    <form action="login.html" class="form-register m-auto" method="get" id="formRegister">
+                        <h1 class="text-orange lexend text-center fs-24 fw-bold text-uppercase">Đăng ký tài khoản</h1>
+                        <div class="form-container">
+                            <input type="text" class="text-orange fs-15 lexend" name="userName" id="name"
+                                placeholder="Họ tên (*)" required>
+                            <input type="tel" class="text-orange fs-15 lexend" name="phone" id="phoneUser"
+                                placeholder="Số điện thoại (*)" required>
+                            <input type="text" class="text-orange fs-15 lexend" name="location" id="locationUser"
+                                placeholder="Địa chỉ(*)" required>
+                            <input type="email" class="text-orange fs-15 lexend" name="email" id="mailUser"
+                                placeholder="Email (*)">
+                            <input type="password" class="text-orange fs-15 lexend" name="password" id="passwordUser"
+                                placeholder="Nhập mật khẩu (*)" required>
+                            <input type="password" class="text-orange fs-15 lexend" name="password-2"
+                                id="passwordUser-2" placeholder="Nhập lại mật khẩu (*)" required>
+                            <label for="checkUser" class="lexend fs-15 text-grey d-flex mt-3 gap-2 d-lg-block d-none">
+                                <input type="checkbox" name="checkinput" id="checkUser">
+                                Tôi đồng ý với điều khoản và chính sách của Foodbox
+                            </label>
+                            <button class="lexend btn btn-orange text-white d-block w-100 rounded-20 fs-18 fw-500"
+                                type="submit">Đăng
+                                ký</button>
+                        </div>
+                        <p class="fs-15 lexend text-grey text-center  d-lg-block d-none">Bạn đã có tài khoản? Vui lòng
+                            đăng nhập
+                            <a href="login.html" class="text-orange text-decoration-underline d-inline-block"> tại đây
+                            </a>
+
+                        </p>
+                        <a href="login.html"
+                            class="text-orange fs-12 fw-300 lexend d-lg-none text-decoration-underline text-center d-block mt-4">Về
+                            trang đăng
+                            nhập</a>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- END FOOTER -->
+
+
+    <!-- Bootstrap CDN js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- END Bootstrap CDN js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

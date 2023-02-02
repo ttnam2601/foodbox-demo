@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <!-- Bootstrap CDN css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- END Bootstrap CDN css-->
+
+    <!--IMPORT HEADER AND FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!-- END IMPORT HEADER AND FOOTER -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <!-- END HEADER -->
+
+
+
+    <section class="checkout">
+        <div class="container">
+            <div class="breakcumb">
+                <ul class="d-flex list-unstyled">
+                    <li class="breakcumb-item d-flex align-items-center fs-15">
+                        <a href="index.html" target="_blank" class="breakcumb-link lexend  fw-300 ">Trang chủ /</a>
+                    </li>
+                    <li class="breakcumb-item text-orange fs-15 fw-300 lexend ms-2">
+                        Thanh toán
+                    </li>
+                </ul>
+
+            </div>
+            <form action="successful.htm" method="get">
+                <div class="row">
+
+                    <div class="col-lg-8 ps-0">
+                        <h1 class="lexend color-title fs-26 fw-500">Thông tin nhận hàng </h1>
+                        <div class="field-name mt-5">
+                            <input class="d-block w-100" type="text" name="name" id="name"
+                                placeholder="Họ tên khách hàng" required>
+                        </div>
+                        <div class="d-grid grid-column-2">
+                            <div class="field-mail">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="field-phone">
+                                <input type="tel" name="phone" id="phone" placeholder="Số điện thoại" required>
+                            </div>
+                        </div>
+                        <div class="d-grid grid-column-3">
+                            <div class="field-city">
+                                <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                                    <option value="" selected="">Chọn tỉnh thành</option>
+
+                                </select>
+                            </div>
+                            <div class="field-district">
+                                <select class="form-select form-select-sm mb-3" id="district"
+                                    aria-label=".form-select-sm">
+                                    <option value="">Quận / Huyện</option>
+                                </select>
+
+                            </div>
+                            <div class="field-ward">
+                                <select class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                                    <option value="" selected>Chọn phường xã</option>
+                                </select>
+                            </div>
+                            <div class="field-address d-md-none mt-0">
+                                <input type="text" placeholder="Địa chỉ">
+                            </div>
+                        </div>
+                        <div class="field-address d-none d-md-block">
+                            <input type="text" name="location" placeholder="Địa chỉ">
+                        </div>
+                        <div class="d-flex last-field">
+                            <div class="field-note">
+                                <input type="text" placeholder="Ghi chú thêm">
+                            </div>
+                            <div class="field-time">
+                                <select name="time" id="select-time">
+                                    <option value="" selected>Thời gian giao hàng</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+
+
+                        <h2 class="lexend color-title fs-26 fw-500 mt-80 method">Chọn hình thức thanh toán</h2>
+                        <div class="d-grid grid-column-2 checkout-option">
+                            <input type="radio" name="ship" id="" class=" d-none">
+                            <div class="checkout-item d-flex align-items-center">
+
+                                <div class="checkout-logo">
+                                    <img src="img/shipcode.png" alt="ship code">
+                                </div>
+                                <h3 class="lexend color-title fs-14 mb-0">Thanh toán khi nhận hàng
+                                    (COD)</h3>
+                            </div>
+                            <input type="radio" name="ship" id="" class=" d-none">
+                            <div class="checkout-item d-flex align-items-center">
+
+                                <div class="checkout-logo">
+                                    <img src="img/vnpay.png" alt="ship">
+                                </div>
+                                <h3 class="lexend color-title fs-14 mb-0">VNPAY
+                                    Thẻ ATM / App ngân hàng
+                                    Thẻ tín dụng (Credit Card)
+                                    Thẻ ghi nợ (Debit Card</h3>
+                            </div>
+                            <input type="radio" name="ship" id="" class=" d-none">
+                            <div class="checkout-item d-flex align-items-center">
+                                <div class="checkout-logo">
+                                    <img src="img/zalopay.png" alt="ship code">
+                                </div>
+                                <h3 class="lexend color-title fs-14 mb-0">Ví điện tử ZaloPay</h3>
+                            </div>
+                            <input type="radio" name="ship" id="" class=" d-none">
+                            <div class="checkout-item d-flex align-items-center">
+                                <div class="checkout-logo">
+                                    <img src="img/momo.png" alt="ship">
+                                </div>
+                                <h3 class="lexend color-title fs-14 mb-0">Ví MOMO</h3>
+                            </div>
+                        </div>
+                        <!-- voucher -->
+                        <div class="form-voucher rounded-15 mt-50 d-flex flex-column">
+                            <h3 class="color-title lexend fs-26 fw-600">
+                                <img src="img/voucher.png" alt="voucher">
+                                Phiếu ưu đãi
+                            </h3>
+                            <div class="position-relative voucher-wrap mt-auto">
+                                <input type="text" class="bg-white text-orange" placeholder="Nhập mã ưu đãi của bạn">
+                                <div class="btn btn-orange rounded-0 lexend fw-500 fs-18 text-white position-absolute btn-voucher end-0 top-0"
+                                    type="submit">Áp dụng</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 ">
+                        <h2 class="lexend color-title fs-26 fw-500 mt-lg-0 mt-md-5">Thông tin đơn hàng </h2>
+                        <div class="border-1 rounded-15 mt-5 mw-390 ">
+                            <div class="item-product">
+                                <h4 class="lexend fs-18 color-title d-inline-block">Thịt bò Mỹ nhập khẩu (400g)</h4>
+                                <div class="d-flex justify-content-between wrap-product">
+                                    <div class="left">
+                                        <p class="lexend fw-300 fs-15 price-title">Đơn giá : 100.000đ</p>
+                                        <p class="lexend fw-300 fs-15 price-title">Thành tiền :</p>
+                                    </div>
+                                    <div class="center">
+                                        <p class="lexend fw-300 fs-15 price-title">Số lượng: 2</p>
+                                        <p class="price lexend text-orange fw-600">200.000đ</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item-product">
+                                <h4 class="lexend fs-18 color-title d-inline-block">Bắp cải thảo Đà Lạt (200g)</h4>
+                                <div class="d-flex justify-content-between wrap-product">
+                                    <div class="left">
+                                        <p class="lexend fw-300 fs-15 price-title">Đơn giá : 50.000đ</p>
+                                        <p class="lexend fw-300 fs-15 price-title">Thành tiền :</p>
+                                    </div>
+                                    <div class="center">
+                                        <p class="lexend fw-300 fs-15 price-title">Số lượng: 1</p>
+                                        <p class="price lexend fw-600 text-orange">50.000đ</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="total">
+                                <div class="d-flex justify-content-between">
+                                    <div class="left">
+                                        <p class="lexend fw-normal fs-15 price-title">Giao hàng</p>
+                                        <p class="lexend fw-normal fs-15 price-title">Tổng tiền</p>
+                                    </div>
+                                    <div class="right">
+                                        <p class="lexend fs-15 text-orange">0đ</p>
+                                        <p class="lexend fs-15 text-orange">250.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+
+
+                                </div>
+                            </div>
+                            <div class="button-submit">
+                                <button type="submit"
+                                    class="btn btn-orange text-white lexend fs-18 fw-500 d-block w-100 rounded-0">Xác
+                                    nhận đặt
+                                    hàng</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <!-- END FOOTER -->
+
+
+    <!-- Bootstrap CDN js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- END Bootstrap CDN js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- location cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+
+    <script>
+        var citis = document.getElementById("city");
+        var districts = document.getElementById("district");
+        var wards = document.getElementById("ward");
+        var Parameter = {
+            url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+            method: "GET",
+            responseType: "application/json",
+        };
+        var promise = axios(Parameter);
+        promise.then(function (result) {
+            renderCity(result.data);
+        });
+
+        function renderCity(data) {
+            for (const x of data) {
+                citis.options[citis.options.length] = new Option(x.Name, x.Id);
+            }
+            citis.onchange = function () {
+                district.length = 1;
+                ward.length = 1;
+                if (this.value != "") {
+                    const result = data.filter(n => n.Id === this.value);
+
+                    for (const k of result[0].Districts) {
+                        district.options[district.options.length] = new Option(k.Name, k.Id);
+                    }
+                }
+            };
+            district.onchange = function () {
+                ward.length = 1;
+                const dataCity = data.filter((n) => n.Id === citis.value);
+                if (this.value != "") {
+                    const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+
+                    for (const w of dataWards) {
+                        wards.options[wards.options.length] = new Option(w.Name, w.Id);
+                    }
+                }
+            };
+        }
+    </script>
+    <!-- end laction cdn -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
